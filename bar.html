@@ -8,15 +8,18 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         $(document).ready(function(){
+            /* 애니메이션 효과(메뉴 상단) */
             let count=$('.dropdown').length;
             let arr = [];
             for(let i=0; i<count; i++){
                 let menu = $('.dropdown').eq(i);
-                arr.push(menu.offset().left-143.796875);
+                let su = $('.dropdown').offset().left;
+                arr.push(menu.offset().left);
                 $(".dropdown").eq(i).on('mouseover', function(){
-                    $("#bar").css('width', menu.width()).animate({left:arr[i]-3});
+                    $("#bar").css('width', menu.width()).animate({left:menu.offset().left-su-3}, 200);
                 });
             }
+            /* 애니메이션 효과(메뉴 상단) 끝 */
         });
     </script>
 </head>
