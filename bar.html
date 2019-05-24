@@ -8,81 +8,16 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         $(document).ready(function(){
-            let m1=$("#m1").width();
-            let m2=$("#m2").width();
-            let m3=$("#m3").width();
-            let m4=$("#m4").width();
-            let m=$('.dropdown').width();
             let count=$('.dropdown').length;
-            //console.log(marr[1]);
-            //console.log(marr[1].attr('id'));
-
-            /*
-            //console.log(count);
-            for(let i=0; i<count.length; i++){
-                //console.dir($('.dropdown').eq(i).width());
-                //console.log($('.dropdown').eq(i).width());
-                //console.log($().width());
-                //console.log($('.dropdown').attr('id'));
-                //console.log($('.dropdown').attr('id'));
-                //console.log(marr[i].width());
-            }
-            console.log("mid 변수값")
-
-            console.log("----------")
-            let mid=$.makeArray($(".dropdown").map(function(){
-                console.log($(this).attr("id"));
-                return $(this).attr("id");
-            }));
-
-            let su=[-3, 59];
-
+            let arr = [];
             for(let i=0; i<count; i++){
-
-                console.log(mid[i]);
-                $('.dropdown').eq(i).on('mouseover', function(){
-                   $('#bar').css('width', function(){
-                       console.log(mid[i]);
-                       return mid[i];
-                   }).animate({left:su[1]});
-
-                    //su+=mid[i];
-
+                let menu = $('.dropdown').eq(i);
+                arr.push(menu.offset().left-143.796875);
+                $(".dropdown").eq(i).on('mouseover', function(){
+                    $("#bar").css('width', menu.width()).animate({left:arr[i]-3});
                 });
-            }*/
-
-            $("#m1").on('mouseover', function(){
-                $("#bar").css('width', m1).animate({left:-3});
-            });
-            $("#m2").on('mouseover', function(){
-                $("#bar").css('width', m2).animate({left:m1-3});
-            });
-            $("#m3").on('mouseover', function(){
-                $("#bar").css('width', m3).animate({left:m1+m2-3});
-            });
-            $("#m4").on('mouseover', function(){
-                $("#bar").css('width', m4).animate({left:m1+m2+m3-2});
-            });
-            $("#m5").on('mouseover', function(){
-                $("#bar").css('width', m4).animate({left:m1+m2+m3+m4-2});
-            });
-            $("#m6").on('mouseover', function(){
-                $("#bar").css('width', m4).animate({left:m1+m2+m3+m4+m5-2});
-            });
-            $("#m7").on('mouseover', function(){
-                $("#bar").css('width', m4).animate({left:m1+m2+m3+m4+m5+m6-2});
-            });
-            $("#m8").on('mouseover', function(){
-                $("#bar").css('width', m4).animate({left:m1+m2+m3+m4+m5+m6+m7-2});
-            });
-            $("#m9").on('mouseover', function(){
-                $("#bar").css('width', m4).animate({left:m1+m2+m3+m4+m5+m6+m7+m8-2});
-            });
-            $("#m10").on('mouseover', function(){
-                $("#bar").css('width', m4).animate({left:m1+m2+m3+m4+m5+m6+m7+m8+m9-2});
-            });
-});
-
+            }
+        });
     </script>
 </head>
 <body>
