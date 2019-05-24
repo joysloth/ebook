@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eBook</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/mypage3.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            /* 애니메이션 효과(메뉴 상단) */
+            let count=$('.dropdown').length;
+            let arr = [];
+            for(let i=0; i<count; i++){
+                let menu = $('.dropdown').eq(i);
+                let su = $('.dropdown').offset().left;
+                arr.push(menu.offset().left);
+                $(".dropdown").eq(i).on('mouseover', function(){
+                    $("#bar").css('width', menu.width()).animate({left:menu.offset().left-su-3}, 200);
+                });
+            }
+            /* 애니메이션 효과(메뉴 상단) 끝 */
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <ul class="nav">
+               <div id="bar"></div>
+                <li id="m1" class="dropdown"><a href="#">소설</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">코믹스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="m2" class="dropdown"><a href="#">시-에세이</a>
+
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">시</a></li>
+                                <li><a href="#">에세이</a></li>
+                                <li><a href="#">테마시/에세이</a></li>
+                                <li><a href="#">시/에세이 문고</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="m3" class="dropdown"><a href="#">인문</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">문학이론</a></li>
+                                <li><a href="#">한국문학이론</a></li>
+                                <li><a href="#">한문학/한자</a></li>
+                                <li><a href="#">영미문학이론</a></li>
+                                <li><a href="#">중국문학이론</a></li>
+                                <li><a href="#">세계문학이론</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="m4" class="dropdown"><a href="#">학술논문</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">코믹스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m5" class="dropdown"><a href="#">여행</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">국내여행</a></li>
+                                <li><a href="#">해외여행</a></li>
+                                <li><a href="#">테마여행</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m6" class="dropdown"><a href="#">취미</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">취미</a></li>
+                                <li><a href="#">스포츠</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m7" class="dropdown"><a href="#">아동</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">호기심/창의력/습관</a></li>
+                                <li><a href="#">학습참고서</a></li>
+                                <li><a href="#">어린이문학</a></li>
+                                <li><a href="#">아동교양만화</a></li>
+                                <li><a href="#">아동학습만화</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m8" class="dropdown"><a href="#">만화</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">코믹스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m9" class="dropdown"><a href="#">요리</a></li>
+                <li id="m10" class="dropdown"><a href="#">잡지</a></li>
+                <li class="search">
+                    <form action="Search.php">
+                       <li><a href="#"><i class="material-icons">search</i></a></li>
+                        <input type="text">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="b1">
+            <h1>MY PAGE</h1>
+            <hr>
+            <img src="/img/KakaoTalk_20190524_155208672.jpg" alt="프로필사진">
+            <h1>안녕하세요 안호진님</h1>
+
+            <section class="s1">
+            <ul>
+              <h2>My Profile</h2>
+                <li><a href=""><h4>적립금</h4></a></li>
+                <li><a href=""><h4>쿠폰</h4></a></li>
+                <li><a href=""><h4>포인트</h4></a></li>
+                <li><a href=""><h4>결제내역</h4></a></li>
+            </ul>
+            </section>
+
+            <section class="s2">
+               <h3>결제/환불관리</h3>
+                <ul>
+                    <li><a href=""><h4>결제내역</h4></a></li>
+                    <li><a href=""><h4>환불내역</h4></a></li>
+                    <li><a href=""><h4>환불계좌관리</h4></a></li>
+                    <li><a href=""><h4>신청내역</h4></a></li>
+                    <li><a href=""><h4>정기구독해지</h4></a></li>
+                </ul>
+            </section>
+            <h3>상품보관함</h3>
+            <section class="s3">
+                <ul>
+                    <a href="#">해리포터 시리즈(1편~7편)</a>
+                    <a href="#">반지의 제왕 시리즈(1편~3편)</a>
+                    <a href="#">트와일라잇 시리즈(1편~5편)</a>
+                </ul>
+            </section>
+            <h3>나의리뷰</h3>
+            <section class="s4">
+                <ul>
+                    <a href="#">님들아 읽지마셈 노잼임 - 강아지똥</a>
+                    <a href="#">재밌어요ㅎㅎㅎ - 해리포터와 마법사의 돌</a>
+                    <a href="#">읽고 눈물 흘림ㅠㅠㅠ - 개미</a>
+                </ul>
+            </section>
+            <section class="s5">
+               <h3>공지사항</h3><hr>
+                <ul>
+                    <a href="#">서비스 정상화 안내</a><br>
+                    <a href="#">서버 점검 안내</a><br>
+                    <a href="#">5월이벤트 (이번달 다독왕은 나야나~!)</a><br>
+                    <a href="#">시즌2.0업데이트 안내</a><br>
+                    <a href="#">4월 이벤트 (이번달 다독왕은 나야나~!)</a><br>
+                </ul>
+            </section>
+            <section class="s6">
+               <h3>나의문의내역</h3><hr>
+                <ul>
+                    <a href="#">정기구독권 해지하고싶어요</a>
+                </ul>
+            </section>
+    </div>
+</body>
+</html>
