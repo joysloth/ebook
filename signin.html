@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div
+        {
+            margin: 0 auto;
+            width: 400px; height: 500px;
+            /*border: 1px solid silver;*/
+            position: relative;
+            top: 60px;
+        }
+        section
+        {
+            margin: 0 auto;
+            padding: 10px;
+
+            width: 60%;
+            position: relative;
+            top: 40px;
+            left: 20px;
+        }
+        h1{
+            position: relative;
+            left: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+      <h1>회원가입</h1>
+       <section>
+        <label for="id">아이디</label><br>
+        <input type="text" id="id" name="id"><br>
+        <label for="pwd">비밀번호</label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <label for="repwd">비밀번호 재확인</label><br>
+        <input type="password" id="repwd" name="repwd"><br>
+        <label for="name">이름</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label>생년월일</label><br>
+        <input type="text" id="year" placeholder="년도" size="2px;">
+        <select name="month" id="month" size="">
+        <option value="1">1월</option>
+        <option value="2">2월</option>
+        <option value="3">3월</option>
+        <option value="4">4월</option>
+        <option value="5">5월</option>
+        <option value="6">6월</option>
+        <option value="7">7월</option>
+        <option value="8">8월</option>
+        <option value="9">9월</option>
+        <option value="10">10월</option>
+        <option value="11">11월</option>
+        <option value="12">12월</option>
+        </select>
+        <input type="text" id="day" placeholder="날짜" size="3px;"><br>
+        <label for="gen">성별</label><br>
+        <select name="gen" id="gen">
+            <option value="m">남자</option>
+            <option value="w">여자</option>
+        </select><br>
+        <label for="email">이메일</label><br>
+        <input type="text" id="email" placeholder="이메일을 입력하세요"><br>
+        <label for="phone">전화번호</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <button>가입하기</button>
+        </section>
+    </div>
+</body>
+</html>
