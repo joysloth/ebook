@@ -3,32 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>eBook</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" minimum-scale="1.0" maximum-scale="2.0">
+    <link rel="stylesheet" media="screen and (min-width:1201px)" href="css/bar.css">
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1200px)" href="css/mobilepage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/bar.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            /* 애니메이션 효과(메뉴 상단) */
-            let count=$('.dropdown').length;
-            let arr = [];
-            for(let i=0; i<count; i++){
-                let menu = $('.dropdown').eq(i);
-                let su = $('.dropdown').offset().left;
-                arr.push(menu.offset().left);
-                $(".dropdown").eq(i).on('mouseover', function(){
-                    $("#bar").css('width', menu.width()).animate({left:menu.offset().left-su-3}, 200);
-                });
-            }
-            /* 애니메이션 효과(메뉴 상단) 끝 */
-        });
-    </script>
+    <script src="js/bar.js"></script>
 </head>
 <body>
     <div class="container">
         <div>
             <ul class="nav">
                <div id="bar"></div>
-                <li id="m1" class="dropdown"><a href="#">소설</a>
+                <li class="dropdown"><a href="#">소설</a>
                    <div class="fulldrop">
                         <div class="column">
                             <ul>
@@ -40,7 +27,7 @@
                     </div>
                 </li>
 
-                <li id="m2" class="dropdown"><a href="#">시-에세이</a>
+                <li class="dropdown"><a href="#">시-에세이</a>
 
                    <div class="fulldrop">
                         <div class="column">
@@ -54,7 +41,7 @@
                     </div>
                 </li>
 
-                <li id="m3" class="dropdown"><a href="#">인문</a>
+                <li class="dropdown"><a href="#">인문</a>
                    <div class="fulldrop">
                         <div class="column">
                             <ul>
@@ -69,7 +56,7 @@
                     </div>
                 </li>
 
-                <li id="m4" class="dropdown"><a href="#">학술논문</a>
+                <li class="dropdown"><a href="#">학술논문</a>
                    <div class="fulldrop">
                         <div class="column">
                             <ul>
@@ -80,7 +67,7 @@
                         </div>
                     </div>
                 </li>
-                <li id="m5" class="dropdown"><a href="#">여행</a>
+                <li class="dropdown"><a href="#">여행</a>
                    <div class="fulldrop">
                         <div class="column">
                             <ul>
@@ -91,7 +78,7 @@
                         </div>
                     </div>
                 </li>
-                <li id="m6" class="dropdown"><a href="#">취미</a>
+                <li class="dropdown"><a href="#">취미</a>
                    <div class="fulldrop">
                         <div class="column">
                             <ul>
@@ -101,7 +88,7 @@
                         </div>
                     </div>
                 </li>
-                <li id="m7" class="dropdown"><a href="#">아동</a>
+                <li class="dropdown"><a href="#">아동</a>
                    <div class="fulldrop">
                         <div class="column">
                             <ul>
@@ -114,7 +101,7 @@
                         </div>
                     </div>
                 </li>
-                <li id="m8" class="dropdown"><a href="#">만화</a>
+                <li class="dropdown"><a href="#">만화</a>
                    <div class="fulldrop">
                         <div class="column">
                             <ul>
@@ -125,8 +112,8 @@
                         </div>
                     </div>
                 </li>
-                <li id="m9" class="dropdown"><a href="#">요리</a></li>
-                <li id="m10" class="dropdown"><a href="#">잡지</a></li>
+                <li class="dropdown"><a href="#">요리</a></li>
+                <li class="dropdown"><a href="#">잡지</a></li>
                 <li class="search">
                     <form action="Search.php">
                        <li><a href="#"><i class="material-icons">search</i></a></li>
@@ -134,6 +121,26 @@
                     </form>
                 </li>
             </ul>
+        </div>
+        <div id="wrap">
+            <div class="polaroid">
+                <img id="myImg" src="http://image.kyobobook.co.kr/images/book/large/676/l9788932919676.jpg" alt="죽음" style="width:100%">
+                <div id="myModal" class="modal">
+                    <span class="close">×</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+                <div class="text">
+                    <input type="button" value="미리보기">
+                </div>
+            </div>
+            <div class="bookdetail">
+               <span class="n1">
+				시리즈 총 2권
+				</span>
+                <h1>죽음.1</h1>
+                <p id='txt_info'><a href="#">베르나르 베르베르 지음 </a><span class="col">|</span> 전미연 옮김 <span class="col">|</span> 열린책들 <span class="col">|</span> 2019년05월21일 (종이책 2019년 05월 30일 출간)</p>
+            </div>
         </div>
     </div>
 </body>
