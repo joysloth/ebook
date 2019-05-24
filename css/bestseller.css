@@ -378,8 +378,8 @@ aside ul li {
     /*    text-align: center;*/
 }
 
-aside ul li a:hover{
-     color: #16a085;
+aside ul li a:hover {
+    color: #16a085;
 }
 
 
@@ -422,16 +422,51 @@ section {
     position: relative;
 
 }
-.first ul li a:hover{
+
+.first ul li a:hover {
     color: #16a085;
 
 }
+
 .box1 {
     width: 80%;
     height: 500px;
     margin-left: 180px;
     border: 1px solid black;
 
+}
+
+.box1 img, .box2 img, .box3 img {
+
+    height: 100%;
+    float: right;
+}
+
+.box1 h1 {
+    font-size: 3em;
+}
+
+/*마우스오버 이벤트 생성함*/
+.box1:hover {
+    animation-name: myani;
+    animation-duration: 3s;
+    animation-direction: alternate;
+
+}
+
+@keyframes myani {
+    0% {
+
+        border-radius: 0px;
+    }
+
+    50% {}
+
+    100% {
+
+        border-radius: 70px;
+
+    }
 }
 
 .box2 {
