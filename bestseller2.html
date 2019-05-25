@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>eBook</title>
     <link rel="stylesheet" media="screen and (min-width:1201px)" href="css/bestseller2.css">
-    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:750px)" href="css/mobilepage.css">
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:750px)" href="css/testmobile.css">
     <meta name="viewport" content="width=device-width" , initial-scale='1.0' , minimum-scale='1.0' , maximum-scale='2.0'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -231,7 +231,7 @@
         </header>
 
         <nav>
-<!--마우스오버 할 경우 글자 커짐 효과-->
+            <!--마우스오버 할 경우 글자 커짐 효과-->
             <ul>
                 <li><a href="#">ebook</a></li>
                 <li><a href="#">추천</a></li>
@@ -243,40 +243,61 @@
             </ul>
         </nav>
         <section>
-           <ul>
-<!--마우스오버 할 때 글자색상 변경-->
-               <li class="agebest">
-               <h2>
-               <a href="#"> 연령별 베스트셀러</a>
-               <ul >
-                   <li><img src="img/4.jpg" alt="돈의 역사"></li>
-                   <li><img src="img/2.jpg" alt="죽음"></li>
-                   <li><img src="img/3.jpg" alt="숨"></li>
-               </ul>
-               </h2>
-               </li>
+            <ul class="book_img">
+                <!--마우스오버 할 때 글자색상 변경-->
+                <li >
+                    <h2>
+                        <a href="#"> 연령별 베스트셀러</a>
+                        <ul class="agebest">
 
-           <li class="weekbest">
-               <h2>
-               <a href="#"> 주간 베스트셀러</a>
-               <ul>
-                   <li><img src="img/pooh.jpg" alt="곰돌이 푸"></li>
-                   <li><img src="img/4.jpg" alt="돈의 역사"></li>
-                   <li><img src="img/1.jpg" alt="여행의 이유"></li>
-               </ul>
-               </h2>
-               </li>
+                            <li><img src="img/4.jpg" alt="돈의 역사"></li>
+                            <li><img src="img/2.jpg" alt="죽음"></li>
+                            <li><img src="img/3.jpg" alt="숨"></li>
 
+                        </ul>
+                    </h2>
+                </li>
 
-            <li><h2><a href="#"> 월간 베스트셀러</a></h2></li>
+                <li>
+                    <h2>
+                        <a href="#"> 주간 베스트셀러</a>
+                        <ul  class="weekbest">
+                            <li><img src="img/pooh.jpg" alt="곰돌이 푸"></li>
+                            <li><img src="img/4.jpg" alt="돈의 역사"></li>
+                            <li><img src="img/1.jpg" alt="여행의 이유"></li>
 
 
-            <li><h2><a href="#"> 누적 베스트셀러</a></h2>
+                        </ul>
+                    </h2>
+                </li>
 
-            </li>
-             </ul>
 
-<!--
+                <li>
+                    <h2>
+                        <a href="#"> 월간 베스트셀러</a>
+                        <ul  class="monthbest">
+                            <li><img src="img/1.jpg" alt="돈의 역사"></li>
+                            <li><img src="img/2.jpg" alt="죽음"></li>
+                            <li><img src="img/4.jpg" alt="숨"></li>
+                        </ul>
+                    </h2>
+                </li>
+
+
+                <li >
+                    <h2>
+                        <a href="#"> 누적 베스트셀러</a>
+                        <ul class="accbest">
+                            <li> <img src="img/pooh.jpg" alt="행복한 푸"></li>
+                            <li><img src="img/7.jpg" alt="데미안"></li>
+                            <li><img src="img/6.jpg" alt="빅픽처"></li>
+                        </ul>
+                    </h2>
+                </li>
+            </ul>
+
+
+            <!--
             <p>내용 관련 단락1</p>
             <p>내용 관련 단락2</p>
             <p>내용 관련 단락3</p>
@@ -286,7 +307,7 @@
 
         </section>
         <aside>
-            <div class="aside_img">
+            <div class="book_img">
                 <h2>최근 본 ebook</h2>
                 <div class="aside_img_1">
                     <img src="img/pooh.jpg" alt="행복한 푸">

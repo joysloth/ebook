@@ -301,21 +301,13 @@ nav ul li a:hover{
 
 section{
     float:left;
-    width:70%;
+    width:81.5%;
     padding:10px;
     background-color:white;
     margin-bottom:10px;
 }
 
-section .agebest h2{
-
-    padding:10px 0px;
-    display: inline-block;
-    float: left;
-    padding-right: 50px;
-
-}
-section .weekbest h2{
+section h2{
 
     padding:10px 0px;
     display: inline-block;
@@ -324,15 +316,24 @@ section .weekbest h2{
 
 }
 
-.weekbest h2 img{
-    height: 100%;
+
+.book_img img{
+    height: 200px;
 
 }
 
+
+
+
+
+
+
+/*
 section p{
     padding:10px 0px;
     margin-bottom:10px;
 }
+*/
 
 section ul li a{
     text-decoration: none;
@@ -348,7 +349,8 @@ aside{
     float:right;
     background-color:white;
     padding:10px;
-    width:20%;
+    width:15%;
+/*    border: 1px double black;*/
 }
 aside div{
     padding:10px 0px;
@@ -356,12 +358,11 @@ aside div{
 }
 aside h2{
     padding:10px 0px;
-    margin:20px;
-}
-.aside_img_1 img, .aside_img_2 img{
-    width:100%;
+    margin:10px;
 
 }
+
+
 
 footer{
     clear:both;
