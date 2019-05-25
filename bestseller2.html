@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>eBook</title>
+    <link rel="stylesheet" media="screen and (min-width:1201px)" href="css/bestseller2.css">
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:750px)" href="css/mobilepage.css">
+    <meta name="viewport" content="width=device-width" , initial-scale='1.0' , minimum-scale='1.0' , maximum-scale='2.0'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let m1 = $("#m1").width();
+            let m2 = $("#m2").width();
+            let m3 = $("#m3").width();
+            let m4 = $("#m4").width();
+            let m = $('.dropdown').width();
+            let count = $('.dropdown').length;
+            //console.log(marr[1]);
+            //console.log(marr[1].attr('id'));
+
+            /*
+            //console.log(count);
+            for(let i=0; i<count.length; i++){
+                //console.dir($('.dropdown').eq(i).width());
+                //console.log($('.dropdown').eq(i).width());
+                //console.log($().width());
+                //console.log($('.dropdown').attr('id'));
+                //console.log($('.dropdown').attr('id'));
+                //console.log(marr[i].width());
+            }
+            console.log("mid 변수값")
+
+            console.log("----------")
+            let mid=$.makeArray($(".dropdown").map(function(){
+                console.log($(this).attr("id"));
+                return $(this).attr("id");
+            }));
+
+            let su=[-3, 59];
+
+            for(let i=0; i<count; i++){
+
+                console.log(mid[i]);
+                $('.dropdown').eq(i).on('mouseover', function(){
+                   $('#bar').css('width', function(){
+                       console.log(mid[i]);
+                       return mid[i];
+                   }).animate({left:su[1]});
+
+                    //su+=mid[i];
+
+                });
+            }*/
+
+            $("#m1").on('mouseover', function() {
+                $("#bar").css('width', m1).animate({
+                    left: -3
+                });
+            });
+            $("#m2").on('mouseover', function() {
+                $("#bar").css('width', m2).animate({
+                    left: m1 - 3
+                });
+            });
+            $("#m3").on('mouseover', function() {
+                $("#bar").css('width', m3).animate({
+                    left: m1 + m2 - 3
+                });
+            });
+            $("#m4").on('mouseover', function() {
+                $("#bar").css('width', m4).animate({
+                    left: m1 + m2 + m3 - 2
+                });
+            });
+            $("#m5").on('mouseover', function() {
+                $("#bar").css('width', m4).animate({
+                    left: m1 + m2 + m3 + m4 - 2
+                });
+            });
+            $("#m6").on('mouseover', function() {
+                $("#bar").css('width', m4).animate({
+                    left: m1 + m2 + m3 + m4 + m5 - 2
+                });
+            });
+            $("#m7").on('mouseover', function() {
+                $("#bar").css('width', m4).animate({
+                    left: m1 + m2 + m3 + m4 + m5 + m6 - 2
+                });
+            });
+            $("#m8").on('mouseover', function() {
+                $("#bar").css('width', m4).animate({
+                    left: m1 + m2 + m3 + m4 + m5 + m6 + m7 - 2
+                });
+            });
+            $("#m9").on('mouseover', function() {
+                $("#bar").css('width', m4).animate({
+                    left: m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 - 2
+                });
+            });
+            $("#m10").on('mouseover', function() {
+                $("#bar").css('width', m4).animate({
+                    left: m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 - 2
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <ul class="nav">
+                <div id="bar"></div>
+                <li id="m1" class="dropdown"><a href="#">소설</a>
+                    <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">코믹스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="m2" class="dropdown"><a href="#">시-에세이</a>
+
+                    <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">시</a></li>
+                                <li><a href="#">에세이</a></li>
+                                <li><a href="#">테마시/에세이</a></li>
+                                <li><a href="#">시/에세이 문고</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="m3" class="dropdown"><a href="#">인문</a>
+                    <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">문학이론</a></li>
+                                <li><a href="#">한국문학이론</a></li>
+                                <li><a href="#">한문학/한자</a></li>
+                                <li><a href="#">영미문학이론</a></li>
+                                <li><a href="#">중국문학이론</a></li>
+                                <li><a href="#">세계문학이론</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="m4" class="dropdown"><a href="#">학술논문</a>
+                    <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">코믹스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m5" class="dropdown"><a href="#">여행</a>
+                    <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">국내여행</a></li>
+                                <li><a href="#">해외여행</a></li>
+                                <li><a href="#">테마여행</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m6" class="dropdown"><a href="#">취미</a>
+                    <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">취미</a></li>
+                                <li><a href="#">스포츠</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m7" class="dropdown"><a href="#">아동</a>
+                    <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">호기심/창의력/습관</a></li>
+                                <li><a href="#">학습참고서</a></li>
+                                <li><a href="#">어린이문학</a></li>
+                                <li><a href="#">아동교양만화</a></li>
+                                <li><a href="#">아동학습만화</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m8" class="dropdown"><a href="#">만화</a>
+                    <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">코믹스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li id="m9" class="dropdown"><a href="#">요리</a></li>
+                <li id="m10" class="dropdown"><a href="#">잡지</a></li>
+                <li class="search">
+                    <form action="Search.php">
+                <li><a href="#"><i class="material-icons">search</i></a></li>
+                <input type="text">
+                </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 전체화면 -->
+    <div id="wrap">
+        <header>
+            <h1>다독.EBOOk</h1>
+
+        </header>
+
+        <nav>
+<!--마우스오버 할 경우 글자 커짐 효과-->
+            <ul>
+                <li><a href="#">ebook</a></li>
+                <li><a href="#">추천</a></li>
+                <li><a href="#">신간</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">스테디</a></li>
+                <li><a href="#">정가인하</a></li>
+                <li><a href="#">지금혜택</a></li>
+            </ul>
+        </nav>
+        <section>
+           <ul>
+<!--마우스오버 할 때 글자색상 변경-->
+               <li class="agebest">
+               <h2>
+               <a href="#"> 연령별 베스트셀러</a>
+               <ul >
+                   <li><img src="img/4.jpg" alt="돈의 역사"></li>
+                   <li><img src="img/2.jpg" alt="죽음"></li>
+                   <li><img src="img/3.jpg" alt="숨"></li>
+               </ul>
+               </h2>
+               </li>
+
+           <li class="weekbest">
+               <h2>
+               <a href="#"> 주간 베스트셀러</a>
+               <ul>
+                   <li><img src="img/pooh.jpg" alt="곰돌이 푸"></li>
+                   <li><img src="img/4.jpg" alt="돈의 역사"></li>
+                   <li><img src="img/1.jpg" alt="여행의 이유"></li>
+               </ul>
+               </h2>
+               </li>
+
+
+            <li><h2><a href="#"> 월간 베스트셀러</a></h2></li>
+
+
+            <li><h2><a href="#"> 누적 베스트셀러</a></h2>
+
+            </li>
+             </ul>
+
+<!--
+            <p>내용 관련 단락1</p>
+            <p>내용 관련 단락2</p>
+            <p>내용 관련 단락3</p>
+            <p>내용 관련 단락4</p>
+            <p>내용 관련 단락5</p>
+-->
+
+        </section>
+        <aside>
+            <div class="aside_img">
+                <h2>최근 본 ebook</h2>
+                <div class="aside_img_1">
+                    <img src="img/pooh.jpg" alt="행복한 푸">
+
+                </div>
+                <div class="aside_img_2">
+                    <img src="img/3.jpg" alt="숨">
+                </div>
+            </div>
+
+
+
+        </aside>
+        <footer>
+            <p> copyright ⓒ 2016 dadokEbook'S All Rights Reserved</p>
+        </footer>
+    </div>
+
+
+</body></html>
