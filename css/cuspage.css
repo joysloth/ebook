@@ -249,6 +249,7 @@ label.mobile_menu span {
 	font-size: 17px;
 }
 
+
 .cuspage{
 
     margin: 0 auto;
@@ -303,10 +304,11 @@ label.mobile_menu span {
     margin:10px 25px;
 }
 
-.cus2 p{
+.cus2 p a{
 
     color: gray;
     margin: 0 25px;
+    text-decoration: none;
 }
 
 
@@ -350,7 +352,9 @@ aside h2{
 .cus4
 {
     width: 70%;
-    height: 100px;
+    height: 150px;
+
+     border: 3px double #16a085;
 
 }
 
@@ -361,15 +365,17 @@ aside h2{
 .cus5
 {
     width: 40%;
-    height: 250px;
-
+    height: 150px;
     float: left;
+    border: 3px double #16a085;
 }
 
+/*
 .cus5 h3{
 
     margin: 50px 0px 0px 20px;
 }
+*/
 .cus5 ul a
 {
     text-decoration: none;
@@ -380,7 +386,7 @@ aside h2{
 {
     text-decoration: none;
     color: black;
-    margin-bottom: 3px;
+/*    margin-bottom: 3px;*/
     display: block;
 }
 
