@@ -276,6 +276,11 @@ header{
        background-color:white;
 }
 
+header h1 a{
+    text-decoration: none;
+    color:black
+}
+
 nav{
     background-color:#16a085;
     margin-bottom:10px;
@@ -323,8 +328,9 @@ section h2{
 
 }
 
-
-
+.book_img img:hover{
+            transform: scale(1.5);
+}
 
 
 
