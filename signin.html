@@ -7,7 +7,7 @@
         div
         {
             margin: 0 auto;
-            width: 400px; height: 500px;
+            width: 400px; height: 600px;
             /*border: 1px solid silver;*/
             position: relative;
             top: 60px;
@@ -16,7 +16,7 @@
         {
             margin: 0 auto;
             padding: 10px;
-
+           /* border: 1px solid silver;*/
             width: 60%;
             position: relative;
             top: 40px;
@@ -25,12 +25,94 @@
         h1{
             position: relative;
             left: 100px;
+            color: skyblue;
+        }
+        .a{
+            /*border: 1px solid silver;*/
+            float: right;
+            position: relative;
+            right: 100px;
+        }
+        .a h2
+        {   margin-left: 150px;
+            color: skyblue;
         }
 
+        .b{
+            /*border: 1px solid silver;*/
+            float: left;
+            position: relative;
+            left: 100px;
+        }
+        section label, section input, section select
+        {
+            margin-bottom: 12px;
+        }
+        .b img
+        {
+            width: 150px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        label
+        {
+            color: skyblue;
+        }
+        header
+        {   width: 250px;
+            margin: 0 auto;
 
+        }
+        header h1
+        {
+            position: relative;
+            left: 10px;
+        }
     </style>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script>
+        $(document).ready(function(){
+           $('.a h2').on('mouseover', function(){
+                $(this).css('color', 'yellow');
+           });
+            $('.a h2').on('mouseout', function(){
+                $(this).css('color', 'skyblue');
+           });
+
+        $('.b ul img').on('mouseover', function(){
+        $(this).css('transform', 'perspective(300px) scaleZ(1) translateZ(60px)').css('border-radius', '12px');
+    });
+        $('.b ul img').on('mouseout', function(){
+        $(this).css('transform', '').css('border-radius','0px');
+    });
+
+       });
+    </script>
 </head>
 <body>
+  <header><h1>다독EBOOK</h1></header>
+   <div class="a">
+   <h1>다독EBOOK</h1>
+    <h2>많다</h2>
+    <h2>싸다</h2>
+    <h2>ebook만</h2>
+    <h2>언제 어디서든</h2>
+    <h2>쉽고</h2>
+    <h2>간편하게</h2>
+    <h2>누구나</h2>
+    <h2>원하는만큼</h2>
+    <h2>많이 읽자</h2>
+   </div>
+   <div class="b">
+       <h1>다독EBOOK</h1>
+       <h1>최신업데이트</h1>
+       <ul>
+       <img src="/img/1.jpg" alt="a">
+       <img src="/img/1.jpg" alt="a">
+       <img src="/img/1.jpg" alt="a">
+       <img src="/img/1.jpg" alt="a">
+       </ul>
+   </div>
     <div>
       <h1>회원가입</h1>
        <section>
