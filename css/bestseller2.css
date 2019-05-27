@@ -271,8 +271,9 @@ Arrows .nav > li.dropdown > a:after {
      margin:0 auto;
 }
 
+
 header{
-      padding:10px 0px;
+      padding: 3px;
        background-color:white;
 }
 
@@ -280,6 +281,8 @@ header h1 a{
     text-decoration: none;
     color:black
 }
+
+
 
 nav{
     background-color:#16a085;
@@ -295,21 +298,22 @@ nav ul li{
 
 nav ul li a{
     display: inline-block;
-    padding:10px 40px;
+    padding:25px 40px;
     color:white;
     text-decoration: none;
 }
 
 nav ul li a:hover{
-    font-size: 3em;
+    font-size: 27px;
 }
 
 section{
     float:left;
-    width:81.5%;
-    padding:10px;
+    width:80%;
     background-color:white;
     margin-bottom:10px;
+    border:2px solid #ccc;
+    border-radius:10px;
 }
 
 section h2{
@@ -324,7 +328,7 @@ section h2{
 
 .book_img img{
     height: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
 }
 
@@ -333,6 +337,9 @@ section h2{
 }
 
 
+.agebest p, .weekbest p, .monthbest p, .accbest p{
+    font-size: 15px;
+}
 
 /*
 section p{
@@ -361,8 +368,8 @@ section ul li a:hover{
 aside{
     float:right;
     background-color:white;
-    padding:10px;
-    width:15%;
+    padding:5px;
+    width:13%;
 /*    border: 1px double black;*/
 }
 aside div{
