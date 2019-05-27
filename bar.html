@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>eBook</title>
     <meta name="viewport" content="width=device-width" initial-scale="1.0" minimum-scale="1.0" maximum-scale="2.0">
-    <link rel="stylesheet" media="screen and (min-width:1201px)" href="bar.css">
-    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1200px)" href="css/mobilepage.css">
+    <link rel="stylesheet" media="screen and (min-width:1201px)" href="css/bar.css">
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1200px)" href="css/bar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="bar.js"></script>
+    <script src="js/bar.js"></script>
 </head>
 <body>
     <div class="container">
@@ -142,19 +142,43 @@
                 <p id='txt_info'><a href="#">베르나르 베르베르 지음 </a><span class="col">|</span> 전미연 옮김 <span class="col">|</span> 열린책들 <span class="col">|</span> 2019년05월21일 (종이책 2019년 05월 30일 출간)</p>
                 <p><span id="leb">♥♥♥♡ </span><span> </span></p>
             </div>
+            <div id="wraps">
+                <div id="banner">
+			<div class="vis_frame">
+				<ul>
+					<li><a href="#" class="imgset"><img src="img/8.jpg" alt="이미지1" /></a></li>
+					<li><a href="#" class="imgset"><img src="img/2.jpg" alt="이미지1" /></a></li>
+					<li><a href="#" class="imgset"><img src="img/3.jpg" alt="이미지1" /></a></li>
+					<li><a href="#" class="imgset"><img src="img/4.jpg" alt="이미지1" /></a></li>
+					<li><a href="#" class="imgset"><img src="img/8.jpg" alt="이미지1" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="b_control">
+			<a href="#play" class="play"><img src="img/play-button.png" alt="재생"></a>
+			<a href="#stop" class="stop"><img src="img/pause.png"  alt="멈춤"></a>
+		</div>
+		<div id="b_bt">
+			<a href="#left" class="left">&lt;</a>
+			<a href="#right" class="right">&gt;</a>
+		</div>
+		<div id="pos">
+		</div>
+
+            </div>
         </div>
         <div class="bookcontent">
             <ul>
-                <li><a href="#">책소개</a></li><span>|</span>
-                <li><a href="#">목차</a></li><span>|</span>
-                <li><a href="#">저자소개</a></li><span>|</span>
-                <li><a href="#">책속으로</a></li><span>|</span>
-                <li><a href="#">출판사서평</a></li><span>|</span>
-                <li><a href="#">책속 한문장</a></li>
+                <li><a href="#1">책소개</a></li><span>|</span>
+                <li><a href="#2">목차</a></li><span>|</span>
+                <li><a href="#3">저자소개</a></li><span>|</span>
+                <li><a href="#4">책속으로</a></li><span>|</span>
+                <li><a href="#5">출판사서평</a></li><span>|</span>
+                <li><a href="#6">책속 한문장</a></li>
             </ul>
         </div>
             <div class="hd">
-                <h2>책소개</h2>
+                <h2 id="1">책소개</h2>
             </div>
             <div class="desc">
                <h2>누가 날 죽였지? 떠돌이 영혼이 자신의 죽음을 수사하다! <br>저승과 이승을 오가는 환상적인 모험</h2>
@@ -162,13 +186,13 @@
                 </p>
             </div>
             <div class="hd">
-                <h2>목차</h2>
+                <h2 id="2">목차</h2>
             </div>
             <div class="desc">
                 제1막 놀라운 발견<br>제2막 일대 변화
             </div>
             <div class="hd">
-                <h2>저자소개</h2>
+                <h2 id="3">저자소개</h2>
             </div>
             <div class="infos">
                 <div class="thumb">
@@ -235,7 +259,7 @@
             </div>
             <br>
             <div class="hd">
-                <h2>책속으로</h2>
+                <h2 id="4">책속으로</h2>
             </div>
             <div class="desc">
                 <p>「이런, 내가…… 〈진짜〉 죽은 거야?」 <br>
@@ -266,7 +290,7 @@
                     - 1권 199~200면<br><br></p>
             </div>
             <div class="hd">
-                <h2>출판사서평</h2>
+                <h2 id="5">출판사서평</h2>
             </div>
             <div class="desc">
                 <p>책 속의 책, 『상대적이고 절대적인 지식의 백과사전』 <br><br>
@@ -286,10 +310,9 @@
                     이번 책에서 죽음이라는 소재는 추리 소설 형식을 통해 무거움을 벗고 시종일관 경쾌하고 흥미진진하게 다루어진다. 저승과 이승을 오가며 수사가 펼쳐지는 가운데, 주인공들과 함께 용의자들을 추적하다 보면 독자는 놀라운 결말을 마주하게 된다. <br><br></p>
             </div>
             <div class="bookone">
-                <div class="hd2">
-                    <h2>책속 한문장</h2>
+                <div class="hd">
+                    <h2 id="6">책속 한문장<span id="cont">한줄쓰기</span></h2>
                 </div>
-                <div class="btn_more">dd</div>
             </div>
             <br><br><br><br><br>
     </div>
