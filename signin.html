@@ -3,96 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-        div
-        {
-            margin: 0 auto;
-            width: 400px; height: 600px;
-            /*border: 1px solid silver;*/
-            position: relative;
-            top: 60px;
-        }
-        section
-        {
-            margin: 0 auto;
-            padding: 10px;
-           /* border: 1px solid silver;*/
-            width: 60%;
-            position: relative;
-            top: 40px;
-            left: 20px;
-        }
-        h1{
-            position: relative;
-            left: 100px;
-            color: skyblue;
-        }
-        .a{
-            /*border: 1px solid silver;*/
-            float: right;
-            position: relative;
-            right: 100px;
-        }
-        .a h2
-        {   margin-left: 150px;
-            color: skyblue;
-        }
-
-        .b{
-            /*border: 1px solid silver;*/
-            float: left;
-            position: relative;
-            left: 100px;
-        }
-        section label, section input, section select
-        {
-            margin-bottom: 12px;
-        }
-        .b img
-        {
-            width: 150px;
-            height: 200px;
-            margin: 0 auto;
-        }
-        label
-        {
-            color: skyblue;
-        }
-        header
-        {   width: 250px;
-            margin: 0 auto;
-
-        }
-        header h1
-        {
-            position: relative;
-            left: 10px;
-        }
-    </style>
+    <link rel="stylesheet" media="screen and (min-width:1201px)" href="/css/sign.css">
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1200px)" href="/css/mobilesign.css">
+    <meta name="viewport" content="width=device-width, initial-scale='1.0',minimum-scale='1.0', maximum-scale='2.0'">
      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-     <script>
-        $(document).ready(function(){
-           $('.a h2').on('mouseover', function(){
-                $(this).css('color', 'yellow');
-           });
-            $('.a h2').on('mouseout', function(){
-                $(this).css('color', 'skyblue');
-           });
-
-        $('.b ul img').on('mouseover', function(){
-        $(this).css('transform', 'perspective(300px) scaleZ(1) translateZ(60px)').css('border-radius', '12px');
-    });
-        $('.b ul img').on('mouseout', function(){
-        $(this).css('transform', '').css('border-radius','0px');
-    });
-
-       });
-    </script>
+     <script src="js/sign.js"></script>
 </head>
 <body>
-  <header><h1>다독EBOOK</h1></header>
+  <header><a href="#"><h1>다독.EBOOK</h1></a></header>
    <div class="a">
-   <h1>다독EBOOK</h1>
+   <h1>다독.EBOOK</h1>
     <h2>많다</h2>
     <h2>싸다</h2>
     <h2>ebook만</h2>
@@ -104,13 +24,13 @@
     <h2>많이 읽자</h2>
    </div>
    <div class="b">
-       <h1>다독EBOOK</h1>
+       <h1>다독.EBOOK</h1>
        <h1>최신업데이트</h1>
        <ul>
-       <img src="/img/1.jpg" alt="a">
-       <img src="/img/1.jpg" alt="a">
-       <img src="/img/1.jpg" alt="a">
-       <img src="/img/1.jpg" alt="a">
+       <img src="img/5.jpg" alt="최업1">
+       <img src="img/6.jpg" alt="최업2">
+       <img src="img/7.jpg" alt="최업3">
+       <img src="img/8.jpg" alt="최업4">
        </ul>
    </div>
     <div>

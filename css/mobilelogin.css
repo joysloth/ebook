@@ -1,0 +1,36 @@
+
+header a
+{
+    position: relative;
+    left: 30%;
+    text-decoration: none;
+
+}
+header h1
+{
+    color: #1abc9c;
+}
+h1, h2
+{
+    color: #1abc9c;
+}
+.b a img
+{
+    width: 25px;
+    height: 25px;
+}
+.a h1
+{
+    position: relative;
+    left: 20%;
+}
+h2
+{
+    position: relative;
+    left: 20%;
+}
+.b img
+{
+    position: relative;
+    left: 20%;
+}

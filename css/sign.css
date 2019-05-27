@@ -1,0 +1,68 @@
+ div
+        {
+            margin: 0 auto;
+            width: 400px; height: 600px;
+            /*border: 1px solid silver;*/
+            position: relative;
+            top: 60px;
+        }
+        section
+        {
+            margin: 0 auto;
+            padding: 10px;
+           /* border: 1px solid silver;*/
+            width: 60%;
+            position: relative;
+            top: 40px;
+            left: 20px;
+        }
+        h1{
+            position: relative;
+            left: 100px;
+            color: #1abc9c;
+        }
+        .a{
+            /*border: 1px solid silver;*/
+            float: right;
+            position: relative;
+            right: 100px;
+        }
+        .a h2
+        {   margin-left: 150px;
+            color: #1abc9c;
+        }
+
+        .b{
+            /*border: 1px solid silver;*/
+            float: left;
+            position: relative;
+            left: 100px;
+        }
+        section label, section input, section select
+        {
+            margin-bottom: 12px;
+        }
+        .b img
+        {
+            width: 150px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        label
+        {
+            color: #1abc9c;
+        }
+        header
+        {   width: 250px;
+            margin: 0 auto;
+
+        }
+        header h1
+        {
+            position: relative;
+            left: 10px;
+        }
+        header a
+        {
+            text-decoration: none;
+        }

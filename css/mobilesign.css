@@ -1,0 +1,26 @@
+.a, .b
+{
+    display: none;
+}
+section label, section input, section select
+{
+    margin-bottom: 12px;
+}
+div{
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
+}
+header a
+{
+    color: #1abc9c;
+    text-decoration: none;
+}
+h1
+{
+    color :#1abc9c
+}
+label
+{
+    color :#1abc9c
+}
