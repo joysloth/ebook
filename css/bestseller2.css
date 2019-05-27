@@ -334,7 +334,6 @@ section h2{
 
 
 
-
 /*
 section p{
     padding:10px 0px;
@@ -350,6 +349,13 @@ section ul li a{
 section ul li a:hover{
     color:#16a085;
 }
+
+
+.agebest, .weekbest, .monthbest, .accbest{
+    margin: 10px;
+}
+
+
 
 
 aside{
