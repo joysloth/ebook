@@ -36,18 +36,29 @@ $(document).ready(function () {
        $(this).css('transform', '').css('border-radius','0px');
     });
 
-    var modal = document.getElementById('myModal');
-    var img = document.getElementById('myImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
+    let modal = document.getElementById('myModal');
+    let img = document.getElementById('myImg');
+    let modalImg = document.getElementById("img01");
+    let captionText = document.getElementById("caption");
     img.onclick = function () {
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     }
 
-    var span = document.getElementsByClassName("close")[0];
+    let span = document.getElementsByClassName("close")[0];
     span.onclick = function () {
         modal.style.display = "none";
     }
+
+    /* 체크 박스(전체 선택, 해제) */
+    $("#allchk").click(function(){
+       if($("#allchk").prop("checked")){
+           $("input[type=checkbox]").prop("checked",true);
+       } else {
+           $("input[type=checkbox]").prop("checked",false);
+       }
+    });
+
+
 });

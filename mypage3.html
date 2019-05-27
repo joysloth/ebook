@@ -6,22 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/mypage3.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            /* 애니메이션 효과(메뉴 상단) */
-            let count=$('.dropdown').length;
-            let arr = [];
-            for(let i=0; i<count; i++){
-                let menu = $('.dropdown').eq(i);
-                let su = $('.dropdown').offset().left;
-                arr.push(menu.offset().left);
-                $(".dropdown").eq(i).on('mouseover', function(){
-                    $("#bar").css('width', menu.width()).animate({left:menu.offset().left-su-3}, 200);
-                });
-            }
-            /* 애니메이션 효과(메뉴 상단) 끝 */
-        });
-    </script>
+    <script src="mypage3.js"></script>
 </head>
 <body>
     <div class="container">
@@ -139,9 +124,8 @@
     <div id="b1">
             <h1>MY PAGE</h1>
             <hr>
-            <img src="/img/KakaoTalk_20190524_155208672.jpg" alt="프로필사진">
+            <img src="/img/book1.jpg" alt="프로필사진">
             <h1>안녕하세요 안호진님</h1>
-
             <section class="s1">
             <ul>
               <h2>My Profile</h2>
@@ -149,9 +133,10 @@
                 <li><a href=""><h4>쿠폰</h4></a></li>
                 <li><a href=""><h4>포인트</h4></a></li>
                 <li><a href=""><h4>결제내역</h4></a></li>
+                <li><a href=""><h4>개인정보수정</h4></a></li>
+                <li><a href=""><h4>고객센터 1:1문의하기</h4></a></li>
             </ul>
             </section>
-
             <section class="s2">
                <h3>결제/환불관리</h3>
                 <ul>
@@ -162,6 +147,29 @@
                     <li><a href=""><h4>정기구독해지</h4></a></li>
                 </ul>
             </section>
+            <div id="wrap">
+		<h1>최근읽은책</h1>
+		<div id="banner">
+			<div class="vis_frame">
+				<ul>
+					<li><a href="#"><img src="/img/book1.jpg" alt="안드로이드로용돈벌기" /></a></li>
+					<li><a href="#"><img src="/img/book2.jpg" alt="아이폰으로용돈벌기" /></a></li>
+					<li><a href="#"><img src="/img/book3.jpg" alt="실전프로젝트반응형웹퍼블리싱" /></a></li>
+					<li><a href="#"><img src="/img/book4.jpg" alt="웹표준퍼블리싱바이블" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="b_control">
+			<a href="#play" class="play"><img src="img/play.gif"alt="재생" /></a>
+			<a href="#stop" class="stop"><img src="img/stop.gif" alt="멈춤" /></a>
+		</div>
+		<div id="b_bt">
+			<a href="#left" class="left"><img src="img/left.gif" alt="이전 배너이미지" /></a>
+			<a href="#right" class="right"><img src="img/right.gif" alt="다음 배너이미지" /></a>
+		</div>
+		<div id="pos">
+		</div>
+	</div>
             <h3>상품보관함</h3>
             <section class="s3">
                 <ul>
