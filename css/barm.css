@@ -719,14 +719,13 @@ h1 {
 }
 .thead td{
     vertical-align: middle;
-    border-collapse: collapse;
     border-top: 3px dotted #dbdbdb;
 }
 .thead td:nth-child(1){
+    text-align: center;
     width: 140px;
     font-size: 13px;
     color: #777;
-    border-right: 3px dotted #dbdbdb;
 }
 .thead td:nth-child(2){
     color: #777;

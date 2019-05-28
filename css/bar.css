@@ -716,7 +716,6 @@ h1 {
 }
 .thead td{
     vertical-align: middle;
-    border-collapse: collapse;
     border-top: 3px dotted #dbdbdb;
 }
 .thead td:nth-child(1){
