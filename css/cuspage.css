@@ -170,6 +170,34 @@ aside h2 {
 
 
 
+
+
 footer {
     clear: both;
+    padding: 10px;
+    background-color: white;
+}
+
+.footernav ul li{
+      display: inline-block;
+    position: left;
+     margin-right: 20px;
+}
+
+/*footer*/
+.footernav ul li a{
+
+    margin-right: 20px;
+    list-style: none;
+    text-decoration: none;
+    color:gray;
+}
+
+.gimg{
+    width:25px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: -8px;
+    margin-right: -30px;
+
 }
