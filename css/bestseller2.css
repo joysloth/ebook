@@ -298,7 +298,7 @@ nav ul li {
 
 nav ul li a {
     display: inline-block;
-    padding: 25px 40px;
+/*    padding: 25px 40px;*/
     color: white;
     text-decoration: none;
 }
@@ -376,6 +376,7 @@ section p{
 
 .p2{
     padding: 0px;
+    color: gray;
 }
 
 
@@ -390,6 +391,18 @@ section ul li a:hover {
     color: #16a085;
 }
 
+
+
+nav ul {
+    height: 50px;
+    position: relative;
+    top:10px;
+
+}
+
+nav ul li{
+    margin-right: 100px;
+}
 
 .agebest,
 .weekbest,
@@ -419,6 +432,35 @@ aside h2 {
     margin: 10px;
 
 }
+
+
+
+/*
+.bestbtn{
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+      }
+*/
+
+.bestbtn img{
+    width:50px;
+}
+
+
+
+
+/*
+.besttop {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  display: none;
+}
+*/
+
+
 
 
 

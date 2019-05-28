@@ -8,136 +8,24 @@
     <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1200px)" href="css/best2mobile.css">
     <meta name="viewport" content="width=device-width" , initial-scale='1.0' , minimum-scale='1.0' , maximum-scale='2.0'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <!--    <link rel="stylesheet" href="css/bar.css">-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/bestpage.js"></script>
     <script>
         $(document).ready(function() {
-            let m1 = $("#m1").width();
-            let m2 = $("#m2").width();
-            let m3 = $("#m3").width();
-            let m4 = $("#m4").width();
-            let m = $('.dropdown').width();
             let count = $('.dropdown').length;
-            //console.log(marr[1]);
-            //console.log(marr[1].attr('id'));
+            let arr = [];
+            for (let i = 0; i < count; i++) {
+                let menu = $('.dropdown').eq(i);
 
-            /*
-            //console.log(count);
-            for(let i=0; i<count.length; i++){
-                //console.dir($('.dropdown').eq(i).width());
-                //console.log($('.dropdown').eq(i).width());
-                //console.log($().width());
-                //console.log($('.dropdown').attr('id'));
-                //console.log($('.dropdown').attr('id'));
-                //console.log(marr[i].width());
+                arr.push(menu.offset().left);
+                $(".dropdown").eq(i).on('mouseover', function() {
+                    let su = $('.dropdown').offset().left;
+                    $("#bar").css('width', menu.width()).animate({
+                        left: menu.offset().left - su - 3
+                    }, 200);
+                });
             }
-            console.log("mid 변수값")
-
-            console.log("----------")
-            let mid=$.makeArray($(".dropdown").map(function(){
-                console.log($(this).attr("id"));
-                return $(this).attr("id");
-            }));
-
-            let su=[-3, 59];
-
-            for(let i=0; i<count; i++){
-
-                console.log(mid[i]);
-                $('.dropdown').eq(i).on('mouseover', function(){
-                   $('#bar').css('width', function(){
-                       console.log(mid[i]);
-                       return mid[i];
-                   }).animate({left:su[1]});
-
-                    //su+=mid[i];
-
-                });
-            }*/
-
-            $("#m1").on('mouseover', function() {
-                $("#bar").css('width', m1).animate({
-                    left: -3
-                });
-            });
-            $("#m2").on('mouseover', function() {
-                $("#bar").css('width', m2).animate({
-                    left: m1 - 3
-                });
-            });
-            $("#m3").on('mouseover', function() {
-                $("#bar").css('width', m3).animate({
-                    left: m1 + m2 - 3
-                });
-            });
-            $("#m4").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 - 2
-                });
-            });
-            $("#m5").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 - 2
-                });
-            });
-            $("#m6").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 - 2
-                });
-            });
-            $("#m7").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 + m6 - 2
-                });
-            });
-            $("#m8").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 + m6 + m7 - 2
-                });
-            });
-            $("#m9").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 - 2
-                });
-            });
-            $("#m10").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 - 2
-                });
-            });
-
-
-            $('.imgbig').on('mouseover',function(){
-                $(this).css('transform', 'scale(1.3)')
-                        .css('border','3px solid skyblue');
-            });
-
-             $('.imgbig').on('mouseout',function(){
-                $(this).css('transform', 'scale(1)')
-                        .css('border','');
-            });
-
-
-              $('.imgbig').on('click',function(){
-                $(this).css('background-color','red');
-
-            });
-
-
-
-
-
-             $('.textbig').on('mouseover',function(){
-                $(this).css('font-size','30px');
-            });
-
-             $('.textbig').on('mouseout',function(){
-                $(this).css('font-size','20px');
-            });
-
-
-
-
 
 
         });
@@ -260,6 +148,7 @@
 
     <!-- 전체화면 -->
     <div id="wrap">
+
         <header>
             <h1><a href="#">다독.EBOOk</a></h1>
 
@@ -268,13 +157,13 @@
         <nav>
             <!--마우스오버 할 경우 글자 커짐 효과-->
             <ul>
-                <li class="textbig"><a href="#">ebook</a></li>
-                <li class="textbig"><a href="#">추천</a></li>
-                <li class="textbig"><a href="#">신간</a></li>
-                <li class="textbig"><a href="#">베스트</a></li>
-                <li class="textbig"><a href="#">스테디</a></li>
-                <li class="textbig"><a href="#">정가인하</a></li>
-                <li class="textbig"><a href="#">지금혜택</a></li>
+                <li class="textbig1"><a href="#">ebook</a></li>
+                <li class="textbig1"><a href="#">추천</a></li>
+                <li class="textbig1"><a href="#">신간</a></li>
+                <li class="textbig1"><a href="#">베스트</a></li>
+                <li class="textbig1"><a href="#">스테디</a></li>
+                <li class="textbig1"><a href="#">정가인하</a></li>
+                <li class="textbig1"><a href="#">지금혜택</a></li>
             </ul>
         </nav>
         <section>
@@ -293,6 +182,8 @@
                                     <p class="p1">10대 베스트</p>
                                     <p class="p2">홍춘욱 | 로크미디어</p>
                                     <div>1</div><img class="imgbig" src="img/4.jpg" alt="돈의 역사">
+
+
                                 </a>
                             </li>
 
@@ -301,14 +192,14 @@
                                 <a href="#">
                                     <p class="p1">20대 베스트</p>
                                     <p class="p2">베르나르 베르베르 | 열린책들</p>
-                                   <div>1</div> <img class="imgbig" src="img/2.jpg" alt="죽음">
+                                    <div>1</div> <img class="imgbig" src="img/2.jpg" alt="죽음">
                                 </a></li>
 
                             <li>
                                 <a href="#">
                                     <p class="p1">30대 베스트</p>
                                     <p class="p2">야쿠마루 가쿠 | 북플라자</p>
-                                   <div>1</div> <img class="imgbig" src="img/10.jpg" alt="숨">
+                                    <div>1</div> <img class="imgbig" src="img/10.jpg" alt="숨">
                                 </a></li>
 
                         </ul>
@@ -322,19 +213,19 @@
                             <li><a href="#">
                                     <p class="p1"> 봉제인형 살인사건</p>
                                     <p class="p2">다니엘 콜 | 북플라자</p>
-                                   <div>1</div> <img class="imgbig" src="img/11.jpg" alt="봉제인형 살인사건">
+                                    <div>1</div> <img class="imgbig" src="img/11.jpg" alt="봉제인형 살인사건">
                                 </a></li>
 
                             <li><a href="#">
                                     <p class="p1">나는 나로 살기로 했다</p>
                                     <p class="p2">김수현 | 마음의숲 </p>
-                                   <div>2</div> <img class="imgbig" src="img/9.jpg" alt="나는 나로 살기로 했다">
+                                    <div>2</div> <img class="imgbig" src="img/9.jpg" alt="나는 나로 살기로 했다">
                                 </a></li>
 
                             <li><a href="#">
                                     <p class="p1">여행의 이유</p>
                                     <p class="p2">김영하 | 문학동네</p>
-                                  <div>3</div>  <img class="imgbig" src="img/1.jpg" alt="여행의 이유">
+                                    <div>3</div> <img class="imgbig" src="img/1.jpg" alt="여행의 이유">
                                 </a></li>
 
 
@@ -361,7 +252,7 @@
                             <li><a href="#">
                                     <p class="p1">나미야 잡화점의 기적</p>
                                     <p class="p2">히가시노 게이고 지음 | 현대문학</p>
-                                   <div>3</div> <img class="imgbig" src="img/8.jpg" alt="나미야 잡화점의 기적">
+                                    <div>3</div> <img class="imgbig" src="img/8.jpg" alt="나미야 잡화점의 기적">
                                 </a></li>
                         </ul>
                     </h2>
@@ -387,21 +278,16 @@
                             <li><a href="#">
                                     <p class="p1">돌이킬 수 없는 약속</p>
                                     <p class="p2">야쿠마루 가쿠 지음 |북플라자 </p>
-                                   <div>3</div> <img class="imgbig" src="img/10.jpg" alt="돌이킬 수 없는 약속">
+                                    <div>3</div> <img class="imgbig" src="img/10.jpg" alt="돌이킬 수 없는 약속">
                                 </a></li>
                         </ul>
                     </h2>
                 </li>
+
+
             </ul>
+            <!--scroll-->
 
-
-            <!--
-            <p>내용 관련 단락1</p>
-            <p>내용 관련 단락2</p>
-            <p>내용 관련 단락3</p>
-            <p>내용 관련 단락4</p>
-            <p>내용 관련 단락5</p>
--->
 
         </section>
         <aside>
@@ -419,9 +305,11 @@
                 </div>
             </div>
 
+       <div class="bestbtn"><img src="img/chevron-arrow-up.png" alt="top" ></div>
 
-
+        <a href="#" class="besttop"></a>
         </aside>
+
         <footer>
             <p> copyright ⓒ 2019 dadokEbook'S All Rights Reserved</p>
         </footer>

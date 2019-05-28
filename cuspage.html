@@ -10,118 +10,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/cuspage.js"></script>
     <script>
         $(document).ready(function() {
-            let m1 = $("#m1").width();
-            let m2 = $("#m2").width();
-            let m3 = $("#m3").width();
-            let m4 = $("#m4").width();
-            let m = $('.dropdown').width();
             let count = $('.dropdown').length;
-            //console.log(marr[1]);
-            //console.log(marr[1].attr('id'));
+            let arr = [];
+            for (let i = 0; i < count; i++) {
+                let menu = $('.dropdown').eq(i);
 
-            /*
-            //console.log(count);
-            for(let i=0; i<count.length; i++){
-                //console.dir($('.dropdown').eq(i).width());
-                //console.log($('.dropdown').eq(i).width());
-                //console.log($().width());
-                //console.log($('.dropdown').attr('id'));
-                //console.log($('.dropdown').attr('id'));
-                //console.log(marr[i].width());
+                arr.push(menu.offset().left);
+                $(".dropdown").eq(i).on('mouseover', function() {
+                    let su = $('.dropdown').offset().left;
+                    $("#bar").css('width', menu.width()).animate({
+                        left: menu.offset().left - su - 3
+                    }, 200);
+                });
             }
-            console.log("mid 변수값")
-
-            console.log("----------")
-            let mid=$.makeArray($(".dropdown").map(function(){
-                console.log($(this).attr("id"));
-                return $(this).attr("id");
-            }));
-
-            let su=[-3, 59];
-
-            for(let i=0; i<count; i++){
-
-                console.log(mid[i]);
-                $('.dropdown').eq(i).on('mouseover', function(){
-                   $('#bar').css('width', function(){
-                       console.log(mid[i]);
-                       return mid[i];
-                   }).animate({left:su[1]});
-
-                    //su+=mid[i];
-
-                });
-            }*/
-
-            $("#m1").on('mouseover', function() {
-                $("#bar").css('width', m1).animate({
-                    left: -3
-                });
-            });
-            $("#m2").on('mouseover', function() {
-                $("#bar").css('width', m2).animate({
-                    left: m1 - 3
-                });
-            });
-            $("#m3").on('mouseover', function() {
-                $("#bar").css('width', m3).animate({
-                    left: m1 + m2 - 3
-                });
-            });
-            $("#m4").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 - 2
-                });
-            });
-            $("#m5").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 - 2
-                });
-            });
-            $("#m6").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 - 2
-                });
-            });
-            $("#m7").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 + m6 - 2
-                });
-            });
-            $("#m8").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 + m6 + m7 - 2
-                });
-            });
-            $("#m9").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 - 2
-                });
-            });
-            $("#m10").on('mouseover', function() {
-                $("#bar").css('width', m4).animate({
-                    left: m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 - 2
-                });
-            });
 
 
-                $('.imgbig').on('mouseover',function(){
-                $(this).css('transform', 'scale(1.3)')
-                        .css('border','3px solid skyblue');
-            });
-
-             $('.imgbig').on('mouseout',function(){
-                $(this).css('transform', 'scale(1)')
-                        .css('border','');
-            });
-
-
-              $('.imgbig').on('click',function(){
-                $(this).css('background-color','red');
-
-            });
         });
     </script>
 </head>
@@ -295,16 +201,17 @@
         </div>
 
 
-<div class="cus3_1">
-       <h3>FAQ TOP5</h3></div>
+        <div class="cus3_1">
+            <h3>FAQ TOP5</h3>
+        </div>
 
         <section class="cus3">
             <ul>
-                <a href="#">다독.EBOOk 정기권 구매는 어떻게 하나요?</a>
-                <a href="#">기기등록은 몇 대까지 가능한가요?</a>
-                <a href="#">추가적립금 서비스 변경 안내</a>
-                <a href="#">소득공제 받을 수 있나요?</a>
-                <a href="#">책 신청은 어디에서 하나요</a>
+                <a href="#" class="cuslink">다독.EBOOk 정기권 구매는 어떻게 하나요?</a>
+                <a href="#" class="cuslink">기기등록은 몇 대까지 가능한가요?</a>
+                <a href="#" class="cuslink">추가적립금 서비스 변경 안내</a>
+                <a href="#" class="cuslink">소득공제 받을 수 있나요?</a>
+                <a href="#" class="cuslink">책 신청은 어디에서 하나요</a>
             </ul>
         </section>
 
@@ -323,6 +230,9 @@
                 </div>
             </div>
 
+
+            <div class="bestbtnm"><img src="img/chevron-arrow-up.png" alt="top"></div>
+<!--            <a href="#" class="besttop"></a>-->
         </aside>
 
 
@@ -349,14 +259,14 @@
 
 
         </section>
-            <h3>공지사항</h3>
+        <h3>공지사항</h3>
         <section class="cus5">
             <ul>
-                <a href="#">서비스 정상화 안내</a><br>
-                <a href="#">서버 점검 안내</a><br>
-                <a href="#">5월이벤트 (이번달 다독왕은 나야나~!)</a><br>
-                <a href="#">시즌2.0업데이트 안내</a><br>
-                <a href="#">4월 이벤트 (이번달 다독왕은 나야나~!)</a><br>
+                <a href="#" class="cuslink">서비스 정상화 안내</a><br>
+                <a href="#" class="cuslink">서버 점검 안내</a><br>
+                <a href="#" class="cuslink">5월이벤트 (이번달 다독왕은 나야나~!)</a><br>
+                <a href="#" class="cuslink">시즌2.0업데이트 안내</a><br>
+                <a href="#" class="cuslink">4월 이벤트 (이번달 다독왕은 나야나~!)</a><br>
             </ul>
         </section>
 
