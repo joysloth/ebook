@@ -1,15 +1,28 @@
 #wrap
         {
-           /* border: 1px solid silver;*/
+            border: 1px solid #1abc9c;
+            border-radius: 100px;
             width: 700px;
             height: 500px;
             margin: 0 auto;
             position: relative;
             top: 50px;
         }
+header
+{
+    background-color: #1abc9c;
+    border: 5px solid #1abc9c;
+    border-radius: 30px;
+}
+header h1
+{
+    color: black;
+    margin-left: 20px;
+    font-weight: 100;
+}
         h1
         {
-            color: skyblue;
+            color: #1abc9c;
             position: relative;
             left: 150px;
         }
@@ -22,7 +35,6 @@
         }
         .b
         {
-            /*border: 1px solid silver;*/
             margin: 25px;
             height: 200px;
 
@@ -40,7 +52,7 @@
         }
         .b h2
         {
-            color: skyblue;
+            color: #1abc9c;
             position: relative;
             left: 36%;
         }
@@ -49,6 +61,7 @@
             width: 50px;
             height: 50px;
             display: inline-block;
+            border-radius: 30px;
         }
         header
         {   width: 250px;
