@@ -172,17 +172,7 @@ aside h2 {
 
 
 
-footer {
-    clear: both;
-    padding: 10px;
-    background-color: white;
-}
-
-.footernav ul li{
-      display: inline-block;
-    position: left;
-     margin-right: 20px;
-}
+/*footer*/
 
 footer {
     width: 100%;

@@ -38,6 +38,10 @@ $(document).ready(function () {
     });
 
 
+ $('.putbtn').on('click', function()
+                        {
+           alert("당신을 다독여 줄 책이 담겼습니다.")
+        });
 
 
 
