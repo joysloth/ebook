@@ -20,5 +20,14 @@ $(document).ready(function(){
                         {
            alert("가입이 완료되었습니다.")
         });
+    $('.top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+    $('#cont').click(function(){
+        $('.txtq input').css('display', 'inherit')
+    });
        });
 
