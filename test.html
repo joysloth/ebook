@@ -1,76 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <style>
+        .top{
+                position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    display: none;
+    width: 48px;
+    padding: 10px 0px;
+    border-radius: 0px;
+    background-color: #212121;
+    background-color: rgba(50, 50, 50, 0.8);
+    text-align: center;
+    line-height: 1;
+    font-size: 28px;
+    color: #ffffff;
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
-</head>
-<body>
-
-
-
-<div class="w3-content w3-display-container">
-<div class="w3-display-container mySlides">
-  <img src="img/10.jpg" style="width:300px">
-  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-    French Alps
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="img/3.jpg" style="width:300px">
-  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-    Northern Lights
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="img/5.jpg" style="width:300px">
-  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
-    Beautiful Mountains
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="img/6.jpg" style="width:300px">
-  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-    The Rain Forest
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="img/1.jpg" style="width:300px">
-  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
-    Mountains!
-  </div>
-</div>
-
-<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-</div>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
-</body>
+        }
+      div {
+        margin: auto;
+        width: 500px;
+        height: 2000px;
+        border: 1px solid #bcbcbc;
+      }
+      a.top {
+        position: fixed;
+        left: 93%;
+        bottom: 20px;
+        display: none;
+      }
+    </style>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        $( window ).scroll( function() {
+          if ( $( this ).scrollTop() > 200 ) {
+            $( '.top' ).fadeIn();
+          } else {
+            $( '.top' ).fadeOut();
+          }
+        } );
+        $( '.top' ).click( function() {
+          $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+          return false;
+        } );
+      } );
+    </script>
+  </head>
+  <body>
+    <div></div>
+		<a href="#" class="top">Top</a>
+  </body>
 </html>

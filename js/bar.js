@@ -71,6 +71,7 @@ $(document).ready(function () {
 
     });
 
+    /* 이미지 슬라이드 */
     $(function(){
 	var eleWidth = $(".vis_frame ul li").innerWidth();
 	var state = false;
@@ -177,5 +178,23 @@ $(document).ready(function () {
         $(".right").on("mouseover", function(){
            $(".right").css('background-color','#777');
         });
+        /*$(".imgset").*/
      });
+
+    /* 화면상단으로 이동버튼 */
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.top').fadeIn();
+        } else {
+            $('.top').fadeOut();
+        }
+    });
+    $('.top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+
 });
+
