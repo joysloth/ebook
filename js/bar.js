@@ -116,7 +116,7 @@ $(document).ready(function () {
 		stop();
 		num--;
 		if(num < 0){
-			num = $(".vis_frame ul li").length-1;
+			num = $(".vis_frame ul li").length-2;
 		}
 		$(".vis_frame > ul > li:last").insertBefore($(".vis_frame > ul > li:first"));
 		$(".vis_frame > ul").css({left:eleWidth*-1});
@@ -198,7 +198,38 @@ $(document).ready(function () {
         return false;
     });
     $('#cont').click(function(){
-        $('.txtq input').css('display', 'inherit')
+        $('.txtq input').css('display', 'inherit');
+        $('.txtq img').css('display', 'inherit');
+    });
+
+    /* 텍스트창 전송이미지 */
+    $('#textimg').on("mouseover", function(){
+        $(this).attr('src', 'img/check-mark2.png');
+    });
+     $('#textimg').on("mouseout", function(){
+        $(this).attr('src', 'img/check-mark.png');
+    });
+
+    $('#textimg').click(function () {
+        let text = $('#text');
+        let val = $('#text').val();
+        text.val('');
+        console.log(val);
+        let now = new Date();
+        let year = now.getFullYear();
+        let month = now.getMonth();
+        let date = now.getDate();
+        let h = now.getHours();
+        let m = now.getMinutes();
+        let s = now.getSeconds();
+
+        function pad(n, width) {
+            n = n + '';
+            return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
+        }
+
+        let time = year + "-" + pad(month,2) + "-"+ pad(date,2) + "  " + pad(h,2) + ":" + pad(m,2) + ":" + pad(s,2)+ "  ";
+        $('.txts table thead').append('<tr class="asd"><td>' + time + '</td><td>' + val + '</td></tr>');
     });
 });
 

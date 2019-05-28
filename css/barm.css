@@ -677,7 +677,7 @@ h1 {
     position: fixed;
     width: 25px;
     height: 25px;
-    right: 3%;
+    right: 10%;
     bottom: 3%;
     padding: 5px;
     border: 1px solid #dbdbdb;
@@ -691,12 +691,45 @@ h1 {
     top: 0px;
 }
 .txtq{
-
+ width: 87%;
+    top: 30px;
     padding: 10px;
 }
 .txtq input{
     display: none;
-    width: 90%;
+    width: 70%;
     height: 30px;
     border-radius:10px;
+    position: absolute;
+    border: 1px solid #dbdbdb;
+}
+#textimg{
+    display: none;
+    top: 2px;
+    width: 30px;
+    position: relative;
+    float: right;
+}
+.txts{
+    padding: 10px;
+    margin-top: 30px;
+}
+.txts table{
+    width: 90%
+}
+.thead td{
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-top: 3px dotted #dbdbdb;
+}
+.thead td:nth-child(1){
+    width: 140px;
+    font-size: 13px;
+    color: #777;
+    border-right: 3px dotted #dbdbdb;
+}
+.thead td:nth-child(2){
+    color: #777;
+    font-weight: 400;
+    font-family: FontAwesome;
 }
