@@ -12,5 +12,13 @@ $(document).ready(function(){
         $('.b ul img').on('mouseout', function(){
         $(this).css('transform', '').css('border-radius','0px');
     });
-
+        $('#confirm').on('click', function()
+                        {
+           alert("아이디 사용 가능합니다.");
+        });
+        $('#signin').on('click', function()
+                        {
+           alert("가입이 완료되었습니다.")
+        });
        });
+

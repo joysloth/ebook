@@ -259,8 +259,8 @@ hr{
 }
 #b1 img
 {
-    width: 150px;
-    height: 200px;
+    width: 130px;
+    height: 180px;
     margin: 0 auto;
     position: relative;
     float: right;
@@ -321,16 +321,29 @@ hr{
 {
     margin-right: 50px;
 }
+.s2 h3 #input_img
+{
+    float: right;
+    position: relative;
+    top: 1px;
+}
+@charset "utf-8";
 
-
-
-
-
-
-
-
-
-
-
-
-
+*{margin:0;padding:0;}
+body{font-family:"돋움",dotum,sans-serif;font-size:12px;color:#000;}
+li{list-style:none;}
+img{border:0;vertical-align:top;}
+#wrap{width:245px;position:relative;margin:0 auto;}
+#wrap h1{font-size:14px;margin:10px 0;}
+#wrap #banner{padding:15px 35px;border:2px solid #ccc;border-radius:10px;}
+#wrap #banner .vis_frame{width:175px;height:220px;overflow:hidden;position:relative;}
+#wrap #banner .vis_frame ul{position:absolute;left:0;top:0;width:700px;}
+#wrap #banner .vis_frame ul li{width:159px;float:left;padding:0 8px;}
+#wrap #b_control{position:absolute;right:0;top:5px;}
+#wrap #b_control img{width: 11px; height: 11px;}
+#wrap #b_bt img{width: 11px; height: 11px;}
+#wrap #b_bt a.left{position:absolute;left:15px;top:50%;}
+#wrap #b_bt a.right{position:absolute;right:15px;top:50%;}
+#wrap #pos{text-align:center;margin-top:10px;}
+#wrap #pos span{display:inline-block;width:10px;height:10px;border:1px solid #ccc;margin:0 2px;}
+#wrap #pos span.on{background:red;}
