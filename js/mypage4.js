@@ -100,6 +100,22 @@ var eleWidth = $(".vis_frame ul li").innerWidth();
     $('#b1 img').on('mouseout', function(){
        $(this).css('transform', '').css('border-radius','0px');
     });
-
-
+$(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.top').fadeIn();
+            $('.mainmanu').css('opacity', '0.85');
+        } else {
+            $('.top').fadeOut();
+            $('.mainmanu').css('opacity', '');
+        }
+    });
+    $('.top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+    $('#cont').click(function(){
+        $('.txtq input').css('display', 'inherit')
+    });
 });
