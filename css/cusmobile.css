@@ -1,3 +1,5 @@
+/*베스트셀러 모바일 페이지*/
+
 .cuspage {
 
     margin: 0 auto;
@@ -5,7 +7,7 @@
 
 }
 
-.cuspage h1 {
+.cuspage .cus_h1 {
     margin: 20px;
      color:#16a085;
 }

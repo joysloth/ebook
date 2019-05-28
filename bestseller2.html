@@ -6,6 +6,9 @@
     <title>eBook</title>
     <link rel="stylesheet" media="screen and (min-width:1201px)" href="css/bestseller2.css">
     <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1200px)" href="css/best2mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:1201px)" href="css/bar.css">
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1200px)" href="css/barm.css">
+
     <meta name="viewport" content="width=device-width" , initial-scale='1.0' , minimum-scale='1.0' , maximum-scale='2.0'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--    <link rel="stylesheet" href="css/bar.css">-->
@@ -29,6 +32,7 @@
 
 
         });
+
     </script>
 </head>
 
@@ -147,7 +151,7 @@
     </div>
 
     <!-- 전체화면 -->
-    <div id="wrap">
+    <div id="wrap2">
 
         <header>
             <h1><a href="#">다독.EBOOk</a></h1>
@@ -167,43 +171,89 @@
             </ul>
         </nav>
         <section>
+
             <ul class="book_img">
                 <!--마우스오버 할 때 글자색상 변경-->
                 <!--마우스오버 할 때 책 확대 -->
                 <li>
-                    <h2>
-                        <a href="#"> 연령별 베스트셀러</a>
-                        <ul class="agebest">
+                    <form action="" id="frm">
 
-                            <li>
+                        <p class="checkbest"></p>
+                            <label for="sportAll">전체선택</label>
+                            <input type="checkbox" name="dummy" id="bookAll">
+                            <form>
+                                <select name="bestsel" class="bestbox" size="1">
+                                    <option value="bestbox" selected>장바구니</option>
+                                    <option>마이리스트</option>
+                                    <input type="button" value="담기">
+
+                                </select>
+                            </form>
 
 
-                                <a href="#">
-                                    <p class="p1">10대 베스트</p>
-                                    <p class="p2">홍춘욱 | 로크미디어</p>
-                                    <div>1</div><img class="imgbig" src="img/4.jpg" alt="돈의 역사">
+                        <h2>
+                            <a href="#"> 연령별 베스트셀러</a>
+                            <ul class="agebest">
+
+                                <li>
 
 
-                                </a>
-                            </li>
+                                    <a href="#">
+                                        <p class="p1">10대 베스트</p>
+                                        <p class="p2">홍춘욱 | 로크미디어</p>
 
-                            <li>
+                                        <div>1 <input type="checkbox" name="bestch" id="best1"></div>
+                                        <img class="imgbig" src="img/4.jpg" alt="돈의 역사">
+                                        <!--
+                                        <form>
+                                            <select name="bestsel" class="bestbox" size="1">
+                                                <option value="bestbox" selected>장바구니</option>
+                                                <option>마이리스트</option>
 
-                                <a href="#">
-                                    <p class="p1">20대 베스트</p>
-                                    <p class="p2">베르나르 베르베르 | 열린책들</p>
-                                    <div>1</div> <img class="imgbig" src="img/2.jpg" alt="죽음">
-                                </a></li>
+                                            </select>
+                                        </form>
+-->
 
-                            <li>
-                                <a href="#">
-                                    <p class="p1">30대 베스트</p>
-                                    <p class="p2">야쿠마루 가쿠 | 북플라자</p>
-                                    <div>1</div> <img class="imgbig" src="img/10.jpg" alt="숨">
-                                </a></li>
 
-                        </ul>
-                    </h2>
+                                    </a>
+                                </li>
+
+                                <li>
+
+                                    <a href="#">
+                                        <p class="p1">20대 베스트</p>
+                                        <p class="p2">베르나르 베르베르 | 열린책들</p>
+                                        <div>1<input type="checkbox" name="bestch" id="best2"></div>
+                                        <img class="imgbig" src="img/2.jpg" alt="죽음">
+                                        <!--
+                                        <form>
+                                            <select name="bestsel" class="bestbox" size="1">
+                                                <option value="bestbox" selected>장바구니</option>
+                                                <option>마이리스트</option>
+
+                                            </select>
+                                        </form>
+-->
+                                    </a></li>
+
+                                <li>
+                                    <a href="#">
+                                        <p class="p1">30대 베스트</p>
+                                        <p class="p2">야쿠마루 가쿠 | 북플라자</p>
+                                        <div>1<input type="checkbox" name="bestch" id="best3"></div> <img class="imgbig" src="img/10.jpg" alt="숨">
+                                        <!--
+                                        <form>
+                                            <select name="bestsel" class="bestbox" size="1">
+                                                <option value="bestbox" selected>장바구니</option>
+                                                <option>마이리스트</option>
+
+                                            </select>
+                                        </form>
+-->
+                                    </a></li>
+
+                            </ul>
+                        </h2>
                 </li>
 
                 <li>
@@ -213,19 +263,46 @@
                             <li><a href="#">
                                     <p class="p1"> 봉제인형 살인사건</p>
                                     <p class="p2">다니엘 콜 | 북플라자</p>
-                                    <div>1</div> <img class="imgbig" src="img/11.jpg" alt="봉제인형 살인사건">
+                                    <div>1<input type="checkbox" name="bestch" id="best4"></div> <img class="imgbig" src="img/11.jpg" alt="봉제인형 살인사건">
+                                    <!--
+                                    <form>
+                                        <select name="bestsel" class="bestbox" size="1">
+                                            <option value="bestbox" selected>장바구니</option>
+                                            <option>마이리스트</option>
+
+                                        </select>
+                                    </form>
+-->
                                 </a></li>
 
                             <li><a href="#">
                                     <p class="p1">나는 나로 살기로 했다</p>
                                     <p class="p2">김수현 | 마음의숲 </p>
-                                    <div>2</div> <img class="imgbig" src="img/9.jpg" alt="나는 나로 살기로 했다">
+                                    <div>2<input type="checkbox" name="bestch" id="best5"></div> <img class="imgbig" src="img/9.jpg" alt="나는 나로 살기로 했다">
+                                    <!--
+                                    <form>
+                                        <select name="bestsel" class="bestbox" size="1">
+                                            <option value="bestbox" selected>장바구니</option>
+                                            <option>마이리스트</option>
+
+                                        </select>
+                                    </form>
+-->
                                 </a></li>
 
                             <li><a href="#">
                                     <p class="p1">여행의 이유</p>
                                     <p class="p2">김영하 | 문학동네</p>
-                                    <div>3</div> <img class="imgbig" src="img/1.jpg" alt="여행의 이유">
+                                    <div>3<input type="checkbox" name="bestch" id="best6"></div> <img class="imgbig" src="img/1.jpg" alt="여행의 이유">
+                                    <!--
+                                    <form>
+                                        <select name="bestsel" class="bestbox" size="1">
+                                            <option value="bestbox" selected>장바구니</option>
+                                            <option>마이리스트</option>
+
+                                        </select>
+                                    </form>
+-->
                                 </a></li>
 
 
@@ -241,18 +318,45 @@
                             <li><a href="#">
                                     <p class="p1">여행의 이유</p>
                                     <p class="p2">김영하 지음 |문학동네</p>
-                                    <div>1</div><img class="imgbig" src="img/1.jpg" alt="여행의 이유">
+                                    <div>1<input type="checkbox" name="bestch" id="best7"></div><img class="imgbig" src="img/1.jpg" alt="여행의 이유">
+                                    <!--
+                                    <form>
+                                        <select name="bestsel" class="bestbox" size="1">
+                                            <option value="bestbox" selected>장바구니</option>
+                                            <option>마이리스트</option>
+
+                                        </select>
+                                    </form>
+-->
                                 </a></li>
 
                             <li><a href="#">
                                     <p class="p1">죽음</p>
                                     <p class="p2">베르나르 베르베르 | 열린책들</p>
-                                    <div>2</div><img class="imgbig" src="img/2.jpg" alt="죽음">
+                                    <div>2<input type="checkbox" name="bestch" id="best8"></div><img class="imgbig" src="img/2.jpg" alt="죽음">
+                                    <!--
+                                    <form>
+                                        <select name="bestsel" class="bestbox" size="1">
+                                            <option value="bestbox" selected>장바구니</option>
+                                            <option>마이리스트</option>
+
+                                        </select>
+                                    </form>
+-->
                                 </a></li>
                             <li><a href="#">
                                     <p class="p1">나미야 잡화점의 기적</p>
                                     <p class="p2">히가시노 게이고 지음 | 현대문학</p>
-                                    <div>3</div> <img class="imgbig" src="img/8.jpg" alt="나미야 잡화점의 기적">
+                                    <div>3<input type="checkbox" name="bestch" id="best9"></div> <img class="imgbig" src="img/8.jpg" alt="나미야 잡화점의 기적">
+                                    <!--
+                                    <form>
+                                        <select name="bestsel" class="bestbox" size="1">
+                                            <option value="bestbox" selected>장바구니</option>
+                                            <option>마이리스트</option>
+
+                                        </select>
+                                    </form>
+-->
                                 </a></li>
                         </ul>
                     </h2>
@@ -266,19 +370,46 @@
                             <li><a href="#">
                                     <p class="p1">행복한 일은 매일 있어</p>
                                     <p class="p2">곰돌이 푸 (원작) 지음 |알에이치코리아 </p>
-                                    <div>1</div><img class="imgbig" src="img/6.jpg" alt="행복한 푸">
+                                    <div>1<input type="checkbox" name="bestch" id="best10"></div><img class="imgbig" src="img/6.jpg" alt="행복한 푸">
+                                    <!--
+                                    <form>
+                                        <select name="bestsel" class="bestbox" size="1">
+                                            <option value="bestbox" selected>장바구니</option>
+                                            <option>마이리스트</option>
+
+                                        </select>
+                                    </form>
+-->
                                 </a></li>
 
                             <li><a href="#">
                                     <p class="p1">꽃을 보듯 너를 본다</p>
                                     <p class="p2"> 나태주 지음 |지혜 </p>
-                                    <div>2</div><img class="imgbig" src="img/7.jpg" alt="꽃을 보듯 너를 본다">
+                                    <div>2<input type="checkbox" name="bestch" id="best11"></div><img class="imgbig" src="img/7.jpg" alt="꽃을 보듯 너를 본다">
+                                    <!--
+                                    <form>
+                                        <select name="bestsel" class="bestbox" size="1">
+                                            <option value="bestbox" selected>장바구니</option>
+                                            <option>마이리스트</option>
+
+                                        </select>
+                                    </form>
+-->
                                 </a></li>
 
                             <li><a href="#">
                                     <p class="p1">돌이킬 수 없는 약속</p>
                                     <p class="p2">야쿠마루 가쿠 지음 |북플라자 </p>
-                                    <div>3</div> <img class="imgbig" src="img/10.jpg" alt="돌이킬 수 없는 약속">
+                                    <div>3<input type="checkbox" name="bestch" id="best12"></div> <img class="imgbig" src="img/10.jpg" alt="돌이킬 수 없는 약속">
+                                    <!--
+                                    <form>
+                                        <select name="bestsel" class="bestbox" size="1">
+                                            <option value="bestbox" selected>장바구니</option>
+                                            <option>마이리스트</option>
+
+                                        </select>
+                                    </form>
+-->
                                 </a></li>
                         </ul>
                     </h2>
@@ -305,9 +436,9 @@
                 </div>
             </div>
 
-       <div class="bestbtn"><img src="img/chevron-arrow-up.png" alt="top" ></div>
+            <a href="#"><img class="top" src="img/chevron-arrow-up.png" alt="맨위로"></a>
 
-        <a href="#" class="besttop"></a>
+
         </aside>
 
         <footer>
@@ -316,4 +447,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>
