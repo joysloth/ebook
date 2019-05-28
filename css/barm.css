@@ -214,7 +214,6 @@ Arrows .nav > li.dropdown > a:after {
 }
 
 .nav ul li.dropdown:after {
-
     position: absolute;
     left: 170px;
     font-family: FontAwesome;
@@ -223,8 +222,6 @@ Arrows .nav > li.dropdown > a:after {
     margin-left: 10px;
     margin-top: 2px;
 }
-
-
 .nav > li.search {
     border: none;
     -webkit-box-shadow: none;
@@ -269,8 +266,8 @@ Arrows .nav > li.dropdown > a:after {
 }
 
 div.polaroid {
-    width: 269px;
-    height: 381px;
+    width: 150px;
+    height: 150px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 10px;
@@ -281,18 +278,18 @@ div.text {
     text-align: center;
     padding: 20px 0px;
 }
-
 .text input {
     width: 100px;
     height: 40px;
     border-radius: 30px;
 }
-
+.bookdetail h1{
+    font-size: 1.6em;
+}
 .bookdetail {
-    width: 50%;
-
+    width: 55%;
     position: absolute;
-    margin-left: 320px;
+    margin-left: 180px;
 }
 
 /* 책 이미지 */
@@ -337,7 +334,9 @@ div.text {
     padding: 10px 0;
     height: 150px;
 }
-
+.search form{
+    display: none;
+}
 .modal-content,
 #caption {
     -webkit-animation-name: zoom;
@@ -414,12 +413,12 @@ h1 {
 
 #leb {
     color: #16a085;
-    font-size: 17px;
+    font-size: 14px;
 }
 #leb2{
     font-family: "Times New Roman";
     font-weight: bold;
-    font-size: 28px;
+    font-size: 23px;
     color: #1eb388;
     margin-right: 5px;
 }
@@ -438,9 +437,9 @@ h1 {
     font-family: "Times New Roman";
     font-weight: bold;
     color: #149;
-    padding: 10px 0 0;
-    font-size: 14.5px;
-    font-weight: 700;
+    padding: 5px 0 0;
+    font-size: 12.5px;
+    font-weight: 00;
     height: 29px;
 }
 
@@ -568,23 +567,25 @@ h1 {
     margin-top: 150px;
     margin-left: 320px;
 }
-
 #wraps h1 {
     font-size: 14px;
     margin: 10px 0;
 }
-
+#wraps{
+    margin-left: 200px;
+    margin-top: 170px;
+}
 #wraps #banner {
-    padding: 25px 35px;
+    padding: 15px;
     border: 2px solid #ccc;
     border-radius: 10px;
 }
 #wraps #banner .vis_frame {
     width: 300px;
-    height: 240px;
+    height: 200px;
     overflow: hidden;
     position: relative;
-    margin: 0 auto;
+    margin:  auto;
 }
 
 #wraps #banner .vis_frame ul {

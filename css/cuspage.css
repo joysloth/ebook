@@ -1,14 +1,14 @@
 body {
-	font-family: 'Orienta', sans-serif;
-	color: #252525;
-	position: relative;
-	padding:0;
-	margin: 0;
+    font-family: 'Orienta', sans-serif;
+    color: #252525;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
-	width:80%;
-	margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #bar {
@@ -23,267 +23,283 @@ li {
 }
 
 label.mobile_menu span {
-	margin-left: 10px;
-	color: white;
-	display: none;
+    margin-left: 10px;
+    color: white;
+    display: none;
 }
 
 .nav {
 
-	font-family: 'Orienta', sans-serif;
-	font-weight: 400; /* 400 thinner */
-	font-size: 13px;
-	line-height: 13px;
+    font-family: 'Orienta', sans-serif;
+    font-weight: 400;
+    /* 400 thinner */
+    font-size: 13px;
+    line-height: 13px;
 
 
-	position: relative;
-	padding: 0 0 0 4px; /* Fix for inline-block spacing*/
-	margin: 0;
+    position: relative;
+    padding: 0 0 0 4px;
+    /* Fix for inline-block spacing*/
+    margin: 0;
 
 
     background-color: #1abc9c;
 }
 
 
-.nav a, .nav a:link, .nav a:visited, .nav a:hover, .nav a:focus, span {
-	color: #fff;
-	text-decoration: none;
+.nav a,
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:focus,
+span {
+    color: #fff;
+    text-decoration: none;
 }
 
 
 .nav > li {
-	display: inline-block;
-	text-align: center;
-	margin-left: -4px; /* For the inline-block spacing */
+    display: inline-block;
+    text-align: center;
+    margin-left: -4px;
+    /* For the inline-block spacing */
 }
 
 
 
 .nav > li > a {
-	padding:20px 18px;
-	display: block;
+    padding: 20px 18px;
+    display: block;
 }
 
-.nav > li:hover > a{
-	color: #fff;
+.nav > li:hover > a {
+    color: #fff;
 }
 
 .nav > li:hover {
-	background-color: #16a085;
+    background-color: #16a085;
 }
 
 
 
 .nav > li > ul {
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
-	list-style: none;
-	top:53px;
-	background-color: #16a085;
-	width: 200px;
-	text-align: left;
-	margin-top:30px;
-	padding: 0px;
-	z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    list-style: none;
+    top: 53px;
+    background-color: #16a085;
+    width: 200px;
+    text-align: left;
+    margin-top: 30px;
+    padding: 0px;
+    z-index: 99;
 }
 
 
 .nav > li:hover > ul {
-	opacity: 1;
-	visibility: visible;
-	margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0px;
 }
 
 
 .nav li > ul li {
-	font-size: 11px;
-	position: relative;
-	display: block;
-	padding: 15px 10px;
+    font-size: 11px;
+    position: relative;
+    display: block;
+    padding: 15px 10px;
 }
 
-.nav > li > ul  li:hover {
-	background-color: #006191;
+.nav > li > ul li:hover {
+    background-color: #006191;
 }
 
-.nav ul  li:hover > a {
-	color: white;
+.nav ul li:hover > a {
+    color: white;
 }
 
 .nav > li > ul li ul li:hover {
-	background-color: #004b6f;
-}input#mobile_menu { display: none; }
+    background-color: #004b6f;
+}
+
+input#mobile_menu {
+    display: none;
+}
 
 .nav > li > ul li ul li ul {
-	background-color: #004b6f;
+    background-color: #004b6f;
 }
 
 .nav > li > ul li ul li ul li:hover {
-	background-color: #00344d;
+    background-color: #00344d;
 }
 
 
 
 .nav > li > .fulldrop {
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
-	list-style: none;
-	top:53px;
-	left: 0px;
-	background-color: #16a085;
-	width: 100%;
-	min-height: 100px;
-	text-align: left;
-	margin-top:30px;
-	padding: 0;
-	z-index: 99;
-	overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    list-style: none;
+    top: 53px;
+    left: 0px;
+    background-color: #16a085;
+    width: 100%;
+    min-height: 100px;
+    text-align: left;
+    margin-top: 30px;
+    padding: 0;
+    z-index: 99;
+    overflow: hidden;
 }
 
 
 .nav > li:hover .fulldrop {
-	opacity: 1;
-	visibility: visible;
-	margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0px;
 }
 
 .nav ul li:hover:after {
-	color: white;
+    color: white;
 }
 
 .nav > li:hover .coldrop {
-	opacity: 1;
-	visibility: visible;
-	margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0px;
 }
 
-.nav .coldrop .column {width: 130px;margin:0 9px;}
+.nav .coldrop .column {
+    width: 130px;
+    margin: 0 9px;
+}
 
 
 
 .nav .column {
-	width: 14.1%;
-	float: left;
-	color:white;
-	margin: 0 0 0 2.2%;
+    width: 14.1%;
+    float: left;
+    color: white;
+    margin: 0 0 0 2.2%;
 }
 
 .nav .column ul {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .nav .column ul li {
-	padding: 0;
-	list-style: none;
-	font-size: 11px;
+    padding: 0;
+    list-style: none;
+    font-size: 11px;
 }
 
 .nav .column h3 {
-	font-size: 14px;
-	padding: 14px 0;
-	font-weight: 400;
-	margin: 5px 0 5px 0;
+    font-size: 14px;
+    padding: 14px 0;
+    font-weight: 400;
+    margin: 5px 0 5px 0;
 }
 
 .nav .column ul li a {
-	display: block;
-	padding: 0 0 15px 0;
+    display: block;
+    padding: 0 0 15px 0;
 }
 
- Arrows
-.nav > li.dropdown > a:after {
-	 content: " \f107";
-	 font-family: FontAwesome;
-	 color: #fff;
+Arrows .nav > li.dropdown > a:after {
+    content: " \f107";
+    font-family: FontAwesome;
+    color: #fff;
 }
 
 .nav ul li.dropdown:after {
 
-  position: absolute;
-  left: 170px;
-  font-family: FontAwesome;
-  display: inline-block;
-  color: #fff;
-  margin-left: 10px;
-  margin-top: 2px;
+    position: absolute;
+    left: 170px;
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 2px;
 }
 
 
 .nav > li.search {
-	border:none;
-	-webkit-box-shadow:  none;
-    box-shadow:  none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     float: right;
     padding: 11px 6px;
     position: relative;
 }
 
 .nav > li.search:hover {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 
-.nav > li  input {
-	padding: 7px 6px 6px 38px;
-	margin: 0 5px;
-	color:#fff;
-	border:none;
-	background-color: #16a085;
-	font-size: 14px;
-	border: 2px solid #16a085;
+.nav > li input {
+    padding: 7px 6px 6px 38px;
+    margin: 0 5px;
+    color: #fff;
+    border: none;
+    background-color: #16a085;
+    font-size: 14px;
+    border: 2px solid #16a085;
 }
 
-.nav > li  input:focus {
-	outline: none;
-	border-color: white;
+.nav > li input:focus {
+    outline: none;
+    border-color: white;
 }
 
 .nav > li.search i {
-	position: absolute;
-	left: 20px;
-	top:20px;
-	color: #fff;
-	font-size: 17px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #fff;
+    font-size: 17px;
 }
 
 
-.cuspage{
+.cuspage {
 
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
 
 }
 
-.cuspage h1{
+.cuspage h1 {
     margin: 20px;
 }
 
-.cus3_1 h3{
+.cus3_1 h3 {
     margin: 18px 25px;
 }
-.cus1{
-    width:70%;
+
+.cus1 {
+    width: 70%;
     height: 180px;
-    border: 2px solid #16a085;
+    border: 3px double #16a085;
+    border-radius: 10px;
 
 
 }
 
 
 
-.cus1 h2{
+.cus1 h2 {
     color: #16a085;
 }
 
-.cus1 #search1{
+.cus1 #search1 {
 
-    width:370px;
+    width: 370px;
 }
 
-.cus1 li h4{
+.cus1 li h4 {
 
     display: inline-block;
     float: left;
@@ -291,7 +307,7 @@ label.mobile_menu span {
 }
 
 
-.cus1 li a h4{
+.cus1 li a h4 {
     text-decoration: none;
     color: black;
     display: inline-block;
@@ -300,11 +316,11 @@ label.mobile_menu span {
 
 }
 
-.cus2 h2{
-    margin:10px 25px;
+.cus2 h2 {
+    margin: 10px 25px;
 }
 
-.cus2 p a{
+.cus2 p a {
 
     color: gray;
     margin: 0 25px;
@@ -313,61 +329,75 @@ label.mobile_menu span {
 
 
 
-.cus3
-{
+.cus3 {
     width: 70%;
-    height: 150px;
-     border: 3px double #16a085;
+    height: 180px;
+
+    border: 3px double #16a085;
+    border-radius: 10px;
+
 
 }
 
 
 
-aside{
-     position: relative;
-    top:-500px;
-    float:right;
-    background-color:white;
-    padding:10px;
-    width:20%;
+aside {
+    position: relative;
+    top: -500px;
+    float: right;
+    background-color: white;
+    padding: 10px;
+    width: 15%;
 
 }
-aside div{
-    padding:10px 0px;
+
+
+
+.bestbtnm img{
+    width:50px;
+}
+
+
+
+
+
+aside div {
+    padding: 10px 0px;
     margin-bottom: 20px;
 }
-aside h2{
-    padding:10px 0px;
-    margin:10px;
+
+aside h2 {
+    padding: 10px 0px;
+    margin: 10px;
 
 }
 
-.book_img img{
-    width:100%;
-
-}
-
-
-
-.cus4
-{
+.book_img img {
     width: 70%;
-    height: 150px;
-
-     border: 3px double #16a085;
 
 }
 
-.cus4 ul input{
-    padding: 15px;
+
+
+.cus4 {
+    width: 70%;
+    height: 200px;
+    border-radius: 10px;
+    border: 3px double #16a085;
+
+}
+
+.cus4 ul input {
+    padding: 25px;
     font-size: 1em;
 }
-.cus5
-{
-    width: 40%;
-    height: 150px;
+
+.cus5 {
+    width: 70%;
+    height: 270px;
     float: left;
     border: 3px double #16a085;
+    border-radius: 10px;
 }
 
 /*
@@ -376,30 +406,29 @@ aside h2{
     margin: 50px 0px 0px 20px;
 }
 */
-.cus5 ul a
-{
+.cus5 ul a {
     text-decoration: none;
     color: black;
-
-}
-.cus3 ul a, .cus4 ul a
-{
-    text-decoration: none;
-    color: black;
-/*    margin-bottom: 3px;*/
+    padding-bottom: 10px;
     display: block;
 }
 
 
 
-footer{
-    clear: both;
+
+
+.cus3 ul a,
+.cus4 ul a {
+    text-decoration: none;
+    color: black;
+    margin: 13px;
+/*    margin-bottom: 10px;*/
+    display: block;
 }
 
 
 
 
-
-
-
-
+footer {
+    clear: both;
+}

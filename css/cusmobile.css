@@ -1,0 +1,156 @@
+.cuspage {
+
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.cuspage h1 {
+    margin: 20px;
+     color:#16a085;
+}
+
+.cus3_1 h3 {
+    margin: 18px 25px;
+}
+
+.cus1 {
+    width: 80%;
+    height: 180px;
+    border: 3px double #16a085;
+    border-radius: 10px;
+
+
+}
+
+.cus1 ul{
+    list-style: none;
+    font-size: 12.5px;
+}
+
+.cus1 h2 {
+    color: black;
+}
+
+.cus1 #search1 {
+
+    width: 50px;
+}
+
+.cus1 li h4 {
+
+    display: inline-block;
+    float: left;
+
+}
+
+
+.cus1 li a h4 {
+     list-style: none;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    float: left;
+
+
+}
+
+.cus2 h2 {
+    margin: 10px 25px;
+}
+
+.cus2 p a {
+
+    color: gray;
+    margin: 0 25px;
+    text-decoration: none;
+}
+
+
+
+.cus3 {
+    width: 80%;
+
+    border: 3px double #16a085;
+    border-radius: 10px;
+
+
+}
+
+
+
+
+aside {
+    display: none;
+}
+
+aside div {
+    display: none;
+}
+
+aside h2 {
+    display: none;
+
+}
+
+.book_img img {
+    display: none;
+}
+
+
+
+.cus4 {
+    width: 80%;
+
+    border-radius: 10px;
+    border: 3px double #16a085;
+
+}
+
+.cus4 ul input {
+    padding: 25px;
+    font-size: 1em;
+}
+
+
+
+.cus5 {
+    width: 70%;
+
+    float: left;
+    border: 3px double #16a085;
+    border-radius: 10px;
+}
+
+/*
+.cus5 h3{
+
+    margin: 50px 0px 0px 20px;
+}
+*/
+.cus5 ul a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+    display: block;
+}
+
+
+
+
+
+.cus3 ul a,
+.cus4 ul a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+
+
+
+footer {
+    clear: both;
+}
