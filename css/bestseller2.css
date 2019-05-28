@@ -49,12 +49,20 @@ nav ul li a:hover {
 }
 
 .bestbox{
-
+    margin-left: 3px;
+    margin-right: 3px;
     width:100px;
     height: 30px;
     font-size: 15px;
     color:  #16a085;
 }
+
+
+.putbtn{
+    margin-left: 10px;
+}
+
+
 
 section {
     float: left;

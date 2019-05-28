@@ -6,6 +6,8 @@
 
 
 section {
+    position: relative;
+    left: 50px;
     margin: 0 auto;
     float: left;
     width: 80%;
@@ -17,13 +19,15 @@ section {
 
 
 
-#wrap h1 a{
+#wrap2 h1 a{
     text-decoration: none;
     color: mediumaquamarine;
+
+     margin-left: 45px;
 }
 section h2 {
 
-
+margin-left: 20px;
     display: inline-block;
     float: left;
 
@@ -42,7 +46,10 @@ section h2 {
     margin: 0px;
 }
 
-
+nav ul{
+    position: relative;
+    left: 23px;
+}
 
 
 nav ul li {
@@ -54,6 +61,7 @@ nav ul li {
 nav ul li a{
     display: block;
     width: 80%;
+    text-align: center;
     text-decoration: none;
     background-color: cadetblue;
     padding: 10px 0px;
@@ -63,6 +71,29 @@ nav ul li a{
     border-bottom: 1px solid whitesmoke;
 
 }
+.checkbest{
+
+    margin: 0;
+    padding: 0;
+}
+
+.bestbox{
+    margin-left: 3px;
+    margin-right: 3px;
+    width:100px;
+    height: 30px;
+    font-size: 15px;
+    color:  #16a085;
+}
+
+
+.putbtn{
+    margin-left: 10px;
+}
+
+
+
+
 
 
 .book_img li {
