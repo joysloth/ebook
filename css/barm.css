@@ -262,7 +262,7 @@ Arrows .nav > li.dropdown > a:after {
 #wrap {
     width: 100%;
     height: 500px;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 div.polaroid {
@@ -672,13 +672,31 @@ h1 {
 #wraps #pos span.on {
     background: #16a085;
 }
+
 .top{
     position: fixed;
     width: 25px;
     height: 25px;
-    right: 15px;
-    bottom: 15px;
+    right: 3%;
+    bottom: 3%;
     padding: 5px;
     border: 1px solid #dbdbdb;
     border-radius: 50%;
+}
+
+.mainmanu{
+    width: 80%;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+}
+.txtq{
+
+    padding: 10px;
+}
+.txtq input{
+    display: none;
+    width: 90%;
+    height: 30px;
+    border-radius:10px;
 }

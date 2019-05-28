@@ -185,8 +185,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
             $('.top').fadeIn();
+            $('.mainmanu').css('opacity', '0.85');
         } else {
             $('.top').fadeOut();
+            $('.mainmanu').css('opacity', '');
         }
     });
     $('.top').click(function () {
@@ -195,6 +197,8 @@ $(document).ready(function () {
         }, 500);
         return false;
     });
-
+    $('#cont').click(function(){
+        $('.txtq input').css('display', 'inherit')
+    });
 });
 
