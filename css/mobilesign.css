@@ -24,3 +24,65 @@ label
 {
     color :#1abc9c
 }
+ .top{
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    bottom: 15px;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
+footer {
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    background-color: lightgray;
+
+}
+
+
+.footernav {
+    margin: 0 auto;
+    text-align: center;
+    height: 70px;
+}
+
+.footernav ul li {
+    display: inline-block;
+    position: left;
+    margin-right: 20px;
+
+
+}
+
+.footernav ul li a {
+
+    margin-right: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: gray;
+
+}
+
+.gimg {
+    width: 25px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: -8px;
+    margin-right: -30px;
+
+
+}
+
+.footerp {
+    color: gray;
+    text-align: center;
+    height: 10px;
+
+}
+
+.copy {
+    text-align: center;
+}
