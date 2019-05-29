@@ -41,6 +41,21 @@ nav ul li a:hover {
 }
 */
 
+.mainmanu{
+
+
+
+    width:80%;
+    position: fixed;
+    z-index: 1;
+    top:0px;
+}
+
+
+
+
+
+
 .checkbest {
 
     margin: 0;
@@ -203,7 +218,7 @@ aside h2 {
     position: fixed;
     width: 25px;
     height: 25px;
-    right: 3%;
+    right: 10%;
     bottom: 3%;
     padding: 5px;
     border: 1px solid #dbdbdb;
