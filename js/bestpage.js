@@ -55,7 +55,7 @@ $(document).ready(function () {
     });
 
 
-$('.login').on("mouseover", function(){
+  $('.login').on("mouseover", function(){
         $(this).css('background-color', '#16a085');
     });
      $('.login').on("mouseout", function(){
@@ -67,7 +67,12 @@ $('.login').on("mouseover", function(){
      $('.smile').on("mouseout", function(){
         $(this).css('background-color', 'white');
     });
-
+    $('.home').on("mouseover", function(){
+        $(this).css('background-color', '#16a085');
+    });
+     $('.home').on("mouseout", function(){
+        $(this).css('background-color', 'white');
+    });
 
 
 

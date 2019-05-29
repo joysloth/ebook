@@ -202,3 +202,37 @@ footer {
 .copy {
     text-align: center;
 }
+
+
+.login{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 0%;
+    bottom: 50.3%;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
+
+.smile{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 0%;
+    bottom: 46.3%;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
+
+.home{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 0%;
+    bottom: 54.3%;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
