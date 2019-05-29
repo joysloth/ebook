@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Do+Hyeon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nanum Gothic', Malgun Gothic, "돋움", dotum, sans-serif;
+    font-size: 1em;
+    background: #FFFFFF;
+    color: #131a2f;
+}
+
+a, a:hover, a:visited, a:active, a:link {
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+    margin: 50px;
+    opacity: 0.6;
+    text-decoration-line: underline ;
+}
+h4 {
+    text-align: center;
+    margin: 7px;
+}
+hr {
+    color: #EEE;
+}
+p {
+    line-height: 1.5em;
+    margin: 10px;
+    text-align: justify;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.top_menu ul {
+    height: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top_menu ul li {
+    float: right;
+    padding: 10px;
+}
+
+.top_menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.top_menu ul li a:hover {
+    border-bottom: 2px solid #FFF;
+}
+
+.title_text {
+    font-family: 'Do Hyeon', sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 3em;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.menu {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    background-color: #FFF;
+    box-shadow: 3px 3px 5px #DDD;
+    z-index: 200;
+}
+
+.menu ul {
+    background: #FFF;
+    height: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu ul li {
+    float: left;
+    padding: 0px;
+}
+
+.menu ul li a {
+    background: #FFF;
+    color: #cccccc;
+    display: block;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0px;
+    padding: 0px 25px;
+    text-align: center;
+}
+
+.menu ul li a:hover {
+    background: #FFF;
+    color: #111;
+}
+
+.menu ul li ul {
+    background: #FFF;
+    display: none;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    width: 150px;
+    z-index: 300;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li ul li {
+    background: #FFF;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 150px;
+}
+
+.menu ul li ul a {
+    height: 50px;
+    margin: 0px;
+    padding: 0px 25px;
+    text-align: left;
+}
+
+.menu ul li ul a {
+    display: block;
+}
+
+.menu ul li ul a:hover,
+.menu ul li ul li a:hover {
+    color: #333;
+}
+
+.menu p {
+    clear: left;
+}
+
+.menu_fixed {
+    position: fixed;
+    top: 0px;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#new {
+    background-color: #FFF;
+    padding: 60px 0;
+}
+#carouselWrap {
+    margin: 0 auto;
+    width: 800px;
+    height: 270px;
+    padding: 5px;
+    position: relative;
+}
+#carouselPrev {
+    position: absolute;
+    top: 65px;
+    left: -8px;
+    cursor: pointer;
+}
+#carouselNext {
+    position: absolute;
+    top: 65px;
+    right: -8px;
+    cursor: pointer;
+}
+#carouse {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#carouselInner {
+    width: 610px;
+    height: 120px;
+    padding: 10px;
+    list-style-type: none;
+    float: left;
+}
+#carouselInner ul.column li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+
+}
+#carouselInner ul.column li img {
+    border: none;
+    height: 250px;
+}
+#carouselInner ul.column li img:hover {
+    opacity: 0.6;
+}
+
+
+#best_tab {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tab {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.tab li {
+    float: left;
+}
+.tab li a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    color: #fff;
+}
+.tabcontent ul li {
+    display: inline-block;
+    padding: 10px 25px;
+}
+.tabcontent img {
+    height: 200px;
+}
+.tabcontent img:hover {
+    background-color: #666;
+    opacity: 0.8;
+}
+ul.tab li.current {
+    border-bottom: 2px solid #000;
+    color: #222;
+}
+.tabcontent.current {
+    display: block;
+}
+
+#review {
+    margin: 0 auto;
+    background-color: #e8e8e8;
+    padding: 50px 0;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.rbox {
+    margin: 0 auto;
+    width: 800px;
+}
+.rbox ul {
+    list-style: none;
+}
+.rbox ul li {
+    display: inline-block;
+}
+.rbox ul li a {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid #111;
+    background-color: #FFF;
+    color: #000;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.rbox ul li a:hover {
+    opacity: 0.5;
+}
+#event {
+}
+.ebox {
+    margin: 0 auto;
+    width: 800px;
+}
+.ebox ul li {
+    display: inline-block;
+
+    margin: 3px;
+}
+.ev {
+    width: 185px;
+    height: 185px;
+    background-image: linear-gradient(to bottom right, #a7eced , #a5f0dd);
+}
+.ev:hover {
+    border: 3px solid #dcdcdc;
+    background-image: linear-gradient(-90deg, #beedff, #f5e3ff);
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #E9E9E9;
+    color: #FFF;
+    text-align: center;
+}
+
+footer p {
+    padding: 60px 0;
+    color: #444;
+    text-align: center;
+}
+
+.menumo, .title_text_mo, .mo_toggle, .toggle_open, .toggle, input{
+    display: none;
+}
