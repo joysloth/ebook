@@ -29,5 +29,23 @@ $(document).ready(function(){
     $('#cont').click(function(){
         $('.txtq input').css('display', 'inherit')
     });
+     $('.login').on("mouseover", function(){
+        $(this).css('background-color', '#16a085');
+    });
+     $('.login').on("mouseout", function(){
+        $(this).css('background-color', 'white');
+    });
+    $('.smile').on("mouseover", function(){
+        $(this).css('background-color', '#16a085');
+    });
+     $('.smile').on("mouseout", function(){
+        $(this).css('background-color', 'white');
+    });
+    $('.home').on("mouseover", function(){
+        $(this).css('background-color', '#16a085');
+    });
+     $('.home').on("mouseout", function(){
+        $(this).css('background-color', 'white');
+    });
        });
 
