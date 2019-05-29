@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" media="(min-width:801px)">
+    <link rel="stylesheet" href="css/mainmo.css" media="(max-width:800px)">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <nav class="top_menu">
+                <ul>
+                    <li><a href="#">WISH</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">HOME</a></li>
+                </ul>
+            </nav>
+            <div id="mo_toggle">
+                <input type="checkbox" id="toggle_open">
+                <label for="toggle_open" class="topen">
+                    <div class="open"></div>
+                </label>
+                <div class="toggle teffects">
+                    <label for="toggle_open"></label>
+                    <div class="tcontent">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="#">CATEGORY</a></li>
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#">WISH</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="title_text">
+                어디서나 함께하는 나만의 도서관
+            </div>
+            <div class="title_text_mo">
+                dadokebook
+            </div>
+        </header>
+        <aside class="menu">
+            <ul>
+                <li><a href="#" id="current">CATEGORY</a>
+                    <ul>
+                        <li><a href="#">소설</a></li>
+                        <li><a href="#">시/에세이</a></li>
+                        <li><a href="#">인문</a></li>
+                        <li><a href="#">학술논문</a></li>
+                        <li><a href="#">여행</a></li>
+                        <li><a href="#">취미</a></li>
+                        <li><a href="#">아동</a></li>
+                        <li><a href="#">만화</a></li>
+                        <li><a href="#">요리</a></li>
+                        <li><a href="#">매거진</a></li>
+                    </ul>
+                </li>
+                <li><a href="#new">이주의신간</a></li>
+                <li><a href="#best">인기도서</a></li>
+                <li><a href="#review">독자리뷰</a></li>
+                <li><a href="#event">이벤트</a></li>
+            </ul>
+        </aside>
+        <aside class="menumo">
+            <ul>
+                <li><a href="#new">이주의신간</a></li>
+                <li><a href="#best">인기도서</a></li>
+                <li><a href="#review">독자리뷰</a></li>
+                <li><a href="#event">이벤트</a></li>
+            </ul>
+        </aside>
+        <hr />
+        <section id="new">
+            <h1>새로나온 책</h1>
+            <div id="carouselWrap">
+                <p id="carouselPrev"><img src="img/before.png" alt="앞으로" /></p>
+                <p id="carouselNext"><img src="img/next.png" alt="뒤로" /></p>
+                <div id="carouse">
+                    <div id="carouselInner">
+                        <ul class="column">
+                            <li><a href=""><img src="img/1.jpg"></a></li>
+                            <li><a href=""><img src="img/2.jpg"></a></li>
+                            <li><a href=""><img src="img/3.jpg"></a></li>
+                            <li><a href=""><img src="img/4.jpg"></a></li>
+                            <li><a href=""><img src="img/5.jpg"></a></li>
+                            <li><a href=""><img src="img/6.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section id="best">
+            <h1>인기 도서</h1>
+            <div id="best_tab">
+                <ul class="tab">
+                    <li class="current" data-tab="tab1"><a href="#tab1">소설</a></li>
+                    <li data-tab="tab2"><a href="#tab2">에세이</a></li>
+                    <li data-tab="tab3"><a href="#tab3">인문</a></li>
+                    <li data-tab="tab4"><a href="#tab4">컴퓨터</a></li>
+                </ul>
+                <div id="tab1" class="tabcontent current">
+                    <ul>
+                        <li><a href=""><img src="img/novel1.jpg" alt="소설1"></a></li>
+                        <li><a href=""><img src="img/novel2.jpg" alt="소설2"></a></li>
+                        <li><a href=""><img src="img/novel3.jpg" alt="소설3"></a></li>
+                    </ul>
+                </div>
+                <div id="tab2" class="tabcontent">
+                    <ul>
+                        <li><a href=""><img src="img/es1.jpg" alt="에세이1"></a></li>
+                        <li><a href=""><img src="img/es2.jpg" alt="에세이2"></a></li>
+                        <li><a href=""><img src="img/es3.jpg" alt="에세이3"></a></li>
+                    </ul>
+                </div>
+                <div id="tab3" class="tabcontent">
+                    <ul>
+                        <li><a href=""><img src="img/i1.jpg" alt="인문1"></a></li>
+                        <li><a href=""><img src="img/i2.jpg" alt="인문2"></a></li>
+                        <li><a href=""><img src="img/i3.jpg" alt="인문3"></a></li>
+                    </ul>
+                </div>
+                <div id="tab4" class="tabcontent">
+                    <ul>
+                        <li><a href=""><img src="img/c1.jpg" alt="컴퓨터1"></a></li>
+                        <li><a href=""><img src="img/c2.jpg" alt="컴퓨터2"></a></li>
+                        <li><a href=""><img src="img/c3.jpg" alt="컴퓨터3"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section id="review">
+            <h1>추천 서평</h1>
+            <div class="rbox">
+                <ul>
+                    <li>
+                        <a href="">
+                            <h4>시 읽는 법</h4>
+                            <hr />
+                            <p>어딘가에는 필요하겠지만 나의 삶에는 필요치 않다며 시를 멀리했던 사람에게 시집을 읽어 봐야겠다는 마음을 심어 주는 책이다.</p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <h4>신발 벗고 들어오세요</h4>
+                            <hr />
+                            <p>사원 입구에 놓인 다양한 신발을 보며 주인을 추측하는 일은 여행의 작은 즐거움이었다. 신발을 벗을 때의 느낌도 좋았다.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h4>골든 아워</h4>
+                            <hr />
+                            <p>시스템이 기능하지 않는 현실 속에서도 생명을 지키려 애써온 사람들-의료진, 소방대원, 군인 등-의 분투를 날 것 그대로 담아낸 역사적 기록이다.</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <h4>일주일</h4>
+                            <hr />
+                            <p>사랑을 하는 모두가 아프지 않기를, 다치지 않고 사랑할 수 있기를 바라는 작가의 따뜻한 마음이 이 소설을 만나는 독자들에게도 깊은 감동과 깨달음으로 고스란히 전해질 것이다.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h4>머나먼 섬들의 지도</h4>
+                            <hr />
+                            <p>지도 속 섬들은 세상의 가장 외진 곳이면서도 중심이고, 고독하면서도 스스로 완벽하다.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h4>밤의 언어</h4>
+                            <hr />
+                            <p>다른 누구에게도 책임을 돌리지 않는 일은 쉽지 않다. 하지만 그만한 가치가 있을지도 모른다.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section id="event">
+            <h1>이벤트</h1>
+            <div class="ebox">
+                <ul>
+                    <li><a href="#event">
+                            <div class="ev"></div>
+                        </a></li>
+                    <li><a href="#event">
+                            <div class="ev"></div>
+                        </a></li>
+                    <li><a href="#event">
+                            <div class="ev"></div>
+                        </a></li>
+                    <li><a href="#event">
+                            <div class="ev"></div>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright dadokebook</p>
+        </footer>
+    </div>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
