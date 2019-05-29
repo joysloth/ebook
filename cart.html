@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eBook</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" minimum-scale="1.0" maximum-scale="2.0">
+    <link rel="stylesheet" media="screen and (min-width:1201px)" href="css/bar.css">
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1200px)" href="css/barm.css">
+    <link rel="stylesheet" href="css/cart.css" media="screen and (min-width:1201px)">
+    <link rel="stylesheet" href="css/cartmo.css" media="screen and (min-width:320px) and (max-width:1200px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/bar.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="mainmanu">
+            <ul class="nav">
+               <div id="bar"></div>
+                <li class="dropdown"><a href="#">소설</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">코믹스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="dropdown"><a href="#">시-에세이</a>
+
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">시</a></li>
+                                <li><a href="#">에세이</a></li>
+                                <li><a href="#">테마시/에세이</a></li>
+                                <li><a href="#">시/에세이 문고</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="dropdown"><a href="#">인문</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">문학이론</a></li>
+                                <li><a href="#">한국문학이론</a></li>
+                                <li><a href="#">한문학/한자</a></li>
+                                <li><a href="#">영미문학이론</a></li>
+                                <li><a href="#">중국문학이론</a></li>
+                                <li><a href="#">세계문학이론</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="dropdown"><a href="#">학술논문</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">코믹스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="#">여행</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">국내여행</a></li>
+                                <li><a href="#">해외여행</a></li>
+                                <li><a href="#">테마여행</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="#">취미</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">취미</a></li>
+                                <li><a href="#">스포츠</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="#">아동</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">호기심/창의력/습관</a></li>
+                                <li><a href="#">학습참고서</a></li>
+                                <li><a href="#">어린이문학</a></li>
+                                <li><a href="#">아동교양만화</a></li>
+                                <li><a href="#">아동학습만화</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="#">만화</a>
+                   <div class="fulldrop">
+                        <div class="column">
+                            <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">코믹스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="#">요리</a></li>
+                <li class="dropdown"><a href="#">잡지</a></li>
+                <li class="search">
+                    <form action="Search.php">
+                       <li><a href="#"><i class="material-icons">search</i></a></li>
+                        <input type="text">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div id="wrap">
+        <header>
+            <div class="title">
+                dadokebook
+            </div>
+            <nav id="top">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CATEGORY</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">WISH</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <aside id="list">
+            <ul>
+                <li><a href="">my list1</a></li>
+                <li><a href="">my list2</a></li>
+                <li><a href="">my list3</a></li>
+                <li><a href="">my list4</a></li>
+            </ul>
+        </aside>
+        <section id="content">
+            <div class="cart">
+                <ul class="book">
+                    <li class="bcover"><img src="img/cart1.jpg" alt="죽고 싶지만 떡볶이는 먹고 싶어2"></li>
+                    <li class="btitle">죽고 싶지만 떡볶이는 먹고 싶어2</li>
+                    <li class="baut">백세희</li>
+                    <li class="bpubl">흔</li>
+                    <li class="delete" href='#'><img src="img/del.png" alt="삭제"></li>
+                </ul>
+                <ul class="book">
+                    <li class="bcover"><img src="img/cart2.jpg" alt="페르세폴리스"></li>
+                    <li class="btitle">페르세폴리스</li>
+                    <li class="baut">마르잔 사트라피</li>
+                    <li class="bpubl">휴머니스트</li>
+                    <li class="delete" href='#'><img src="img/del.png" alt="삭제"></li>
+                </ul>
+                <ul class="book">
+                    <li class="bcover"><img src="img/cart3.jpg" alt="나는 나로 살기로 했다"></li>
+                    <li class="btitle">나는 나로 살기로 했다</li>
+                    <li class="baut">김수현</li>
+                    <li class="bpubl">마음의 숲</li>
+                    <li class="delete" href='#'><img src="img/del.png" alt="삭제"></li>
+                </ul>
+                <ul class="book">
+                    <li class="bcover"><img src="img/cart4.jpg" alt="아자젤"></li>
+                    <li class="btitle">아자젤</li>
+                    <li class="baut">보리스 아루난</li>
+                    <li class="bpubl">아작</li>
+                    <li class="delete" href='#'><img src="img/del.png" alt="삭제"></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+        <div class="footermain">
+            <div class="footernav">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">광고안내</a></li>
+                    <li><a href="#">도서안내</a></li>
+                    <li><a href="#"><img src="img/%EA%B5%AC%EA%B8%80%20%EC%95%84%EC%9D%B4%EC%BD%98.png" alt="구글 아이콘" class="gimg"></a></li>
+                    <li><a href="#"><img src="img/%EB%84%A4%EC%9D%B4%EB%B2%84%20%EC%95%84%EC%9D%B4%EC%BD%98.png" alt="네이버 아이콘" class="gimg"></a></li>
+                    <li><a href="#"><img src="img/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EC%95%84%EC%9D%B4%EC%BD%98.png" alt="카카오톡 아이콘" class="gimg"></a></li>
+                </ul>
+                <hr>
+            </div>
+            <div class="footerp">
+                <p>서울특별시 종로구 종로2가 9,7층</p>
+                <p>공동대표: 김현정 박인성 안호진 이찬영</p>
+                <p>사업자등록번호: 219-05-29000</p>
+            </div>
+        </div>
+        <p class="copy"> Copyright ⓒ 2019 dadokEbook'S All Rights Reserved</p>
+    </footer>
+    </div>
+    </div>
+    <script>
+        $(document).on("click", ".cart .delete", function(event) {
+            var $this;
+            event.preventDefault();
+            event.stopPropagation();
+            $this = $(this);
+            $this.closest('.book').remove();
+            return $('.cart').gridly('layout');
+        });
+    </script>
+
+</body>
+
+</html>
