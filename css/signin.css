@@ -12,6 +12,7 @@
             padding: 10px;
            /* border: 1px solid silver;*/
             width: 60%;
+
             position: relative;
             top: 40px;
             left: 20px;
@@ -108,7 +109,7 @@ footer {
 }
 
 .gimg {
-    width: 50px;
+    width: 30px;
     position: relative;
     display: inline-block;
     margin-bottom: -8px;
