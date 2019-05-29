@@ -179,6 +179,10 @@
                 </ul>
             </div>
         </section>
+        <a href="index.html"><img class="home" src="img/home.png" alt="메인"></a>
+            <a href="login.html"><img class="login" src="img/user.png" alt="로그인"></a>
+            <a href="cuspage.html"><img class="smile" src="img/smile.png" alt="고객센터"></a>
+            <a href=""><img class="top" src="img/chevron-arrow-up.png" alt="맨위로"></a>
         <footer>
         <div class="footermain">
             <div class="footernav">
@@ -215,6 +219,26 @@
             $this.closest('.book').remove();
             return $('.cart').gridly('layout');
         });
+    </script>
+    <script>
+        $('.login').on("mouseover", function(){
+        $(this).css('background-color', '#16a085');
+    });
+     $('.login').on("mouseout", function(){
+        $(this).css('background-color', 'white');
+    });
+    $('.smile').on("mouseover", function(){
+        $(this).css('background-color', '#16a085');
+    });
+     $('.smile').on("mouseout", function(){
+        $(this).css('background-color', 'white');
+    });
+    $('.home').on("mouseover", function(){
+        $(this).css('background-color', '#16a085');
+    });
+     $('.home').on("mouseout", function(){
+        $(this).css('background-color', 'white');
+    });
     </script>
 
 </body>
